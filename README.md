@@ -14,32 +14,25 @@ someone complains twice.*
 
 ---
 
-## What this app does
+## Built so far
 
-Employees request repairs through the portal. Urgent problems are flagged by rules —
-not by the loudest requester. Small repairs auto-approve while costly ones wait for
-the facilities agent. Requests route to the right vendor by location. A dashboard
-gives management cost and workload visibility.
+A `Facility Request` table that extends Task, with the standard work-item
+machinery inherited — number, assignment, work notes, activity, priority, state.
 
-## Roles
-
-| Role | What they do |
-|---|---|
-| **Employee** | Submits requests from the portal, tracks their own status |
-| **Facilities agent** | Triage, approval of costly repairs, vendor assignment |
-| **Manager** | Read-only dashboard: workload, costs, anything slipping |
-
-## The three rules
-
-| Rule | How it works |
-|---|---|
-| **Money** | ≤ €150 auto-approved · > €150 agent approval · emergencies skip approval, flagged for review |
-| **Urgency** | Facts decide: urgent ← leaks, power outages, safety hazards, HVAC failure · low ← cosmetic · normal ← the rest |
-| **Routing** | Location suggests the vendor · agent confirms in one click · nothing sits unassigned |
+- Records start at **Open** (OOB default) and move through the Task state
+  lifecycle: Open → Work in Progress → Closed Complete
+- **Building** is a mandatory choice (Building A / Building B / Other), stored
+  as stable keys (`building_a`) for the routing logic that will read it later
 
 ## Design decisions
 
-Added at decision time — decision, rejected alternative, why.
+**Extends Task (not standalone, not Incident)**
+
+- **Decision:** inherit Task's generic work-item machinery — number, assignment,
+  work notes, activity, priority, state
+- **Rejected:** standalone table (rebuilds all of it); Incident (ITSM process semantics)
+- **Why:** platform-first reuse — the inherited priority field feeds the urgency
+  rule when it lands
 
 ## Setup & demo
 
