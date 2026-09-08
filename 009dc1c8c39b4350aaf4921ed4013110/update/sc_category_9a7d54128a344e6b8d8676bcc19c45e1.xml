@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_category">
+    <sc_category action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>Request facility services such as repairs, maintenance, and building management.</description>
+        <entitlement_script/>
+        <header_icon/>
+        <homepage_image/>
+        <homepage_renderer/>
+        <icon/>
+        <image/>
+        <location/>
+        <mobile_hide_description>false</mobile_hide_description>
+        <mobile_picture/>
+        <mobile_subcategory_render_type/>
+        <module/>
+        <order>0</order>
+        <parent/>
+        <roles/>
+        <sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog>
+        <sys_class_name>sc_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-08 11:42:00</sys_created_on>
+        <sys_id>9a7d54128a344e6b8d8676bcc19c45e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Facilities</sys_name>
+        <sys_package display_value="Facilities Maintenance" source="x_2025334_fac">009dc1c8c39b4350aaf4921ed4013110</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_update_name>sc_category_9a7d54128a344e6b8d8676bcc19c45e1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 11:42:00</sys_updated_on>
+        <title>Facilities</title>
+    </sc_category>
+    <sys_translated_text action="delete_multiple" query="documentkey=9a7d54128a344e6b8d8676bcc19c45e1"/>
+</record_update>
