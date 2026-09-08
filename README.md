@@ -2,11 +2,11 @@
 
 # Facilities & Maintenance Requests
 
-**ServiceNow scoped app** — office repairs without the email black hole
+**ServiceNow scoped app** — office repairs without the email chaos
 
 *When an office employee needs a repair — broken AC, broken chair — the request
-goes by email or chat, gets lost or delayed, and the problem stays broken until
-someone complains twice.*
+is sent by email or chat, gets lost or delayed, and the problem stays broken
+until someone complains twice.*
 
 [![Status](https://img.shields.io/badge/Status-MVP%20in%20development-3c9e4e?style=flat&logo=servicenow&logoColor=white)]()
 
@@ -14,26 +14,20 @@ someone complains twice.*
 
 ---
 
-## Built so far
+## What's built so far
 
-A `Facility Request` table that extends Task, with the standard work-item
-machinery inherited — number, assignment, work notes, activity, priority, state.
+A `Facility Request` table that extends Task, so it reuses the platform's
+built-in request features — assignment, work notes, activity, priority, state.
 
-- Records start at **Open** (OOB default) and move through the Task state
-  lifecycle: Open → Work in Progress → Closed Complete
-- **Building** is a mandatory choice (Building A / Building B / Other), stored
-  as stable keys (`building_a`) for the routing logic that will read it later
+- **Portal intake** — employees report repairs from Service Portal and
+  Employee Center, describing the problem and choosing the building
 
 ## Design decisions
 
-**Extends Task (not standalone, not Incident)**
-
-- **Decision:** inherit Task's generic work-item machinery — number, assignment,
-  work notes, activity, priority, state
-- **Rejected:** standalone table (rebuilds all of it); Incident (ITSM process semantics)
-- **Why:** platform-first reuse — the inherited priority field feeds the urgency
-  rule when it lands
+**Extends Task** — we reuse Task's built-in features instead of building our own
+from scratch. Incident was rejected: it's designed for IT incidents, not
+facilities requests.
 
 ## Setup & demo
 
-Pending — published with the release.
+Coming soon — published with the release.
