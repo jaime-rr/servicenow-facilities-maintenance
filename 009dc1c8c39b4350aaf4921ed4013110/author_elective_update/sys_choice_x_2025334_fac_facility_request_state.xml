@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="DELETE" field="state" table="x_2025334_fac_facility_request" version="3">
+        <sys_choice_set action="DELETE">
+            <element>state</element>
+            <name>x_2025334_fac_facility_request</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-08 09:08:35</sys_created_on>
+            <sys_id>dfb9d540c31f4350aaf4921ed401316f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>state</sys_name>
+            <sys_package display_value="Facilities Maintenance" source="x_2025334_fac">009dc1c8c39b4350aaf4921ed4013110</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+            <sys_update_name>sys_choice_x_2025334_fac_facility_request_state</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-08 09:08:35</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</application>
+        <file_path/>
+        <instance_id>8612b622dba6f550caf99027c596196c</instance_id>
+        <instance_name>dev217729</instance_name>
+        <name>sys_choice_x_2025334_fac_facility_request_state</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_choice action="INSERT_OR_UPDATE" field="state" table="x_2025334_fac_facility_request" version="3"><sys_choice_set action="INSERT_OR_UPDATE"><element>state</element><name>x_2025334_fac_facility_request</name><sys_class_name>sys_choice_set</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-08 09:08:35</sys_created_on><sys_id>dfb9d540c31f4350aaf4921ed401316f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>state</sys_name><sys_package display_value="Facilities Maintenance" source="x_2025334_fac">009dc1c8c39b4350aaf4921ed4013110</sys_package><sys_policy/><sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope><sys_update_name>sys_choice_x_2025334_fac_facility_request_state</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-08 09:08:35</sys_updated_on></sys_choice_set></sys_choice></record_update>]]></payload>
+        <payload_hash>-1925095596</payload_hash>
+        <record_name>Facility Request.state</record_name>
+        <reverted_from/>
+        <source>d0ce894cc39b4350aaf4921ed401317f</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-08 09:16:45</sys_created_on>
+        <sys_id>85ab5148c31f4350aaf4921ed4013188</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0804e3a220000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 09:16:45</sys_updated_on>
+        <type>Choice list</type>
+        <update_guid>81ab5148be1f4350f30f5bdcdda99b87</update_guid>
+        <update_guid_history>81ab5148be1f4350f30f5bdcdda99b87:-1925095596,f0ea95c43c1f4350d2b17050efb52cf5:-30076928,a5c91144b31f4350ea17dc778ba3e107:-1974219632</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-08 09:16:45</sys_created_on>
+        <sys_db_object display_value="" name="sys_choice_set">sys_choice_set</sys_db_object>
+        <sys_id>3e036c0a795d436786dad5ee4173dc39</sys_id>
+        <sys_metadata>dfb9d540c31f4350aaf4921ed401316f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>state</sys_name>
+        <sys_package display_value="Facilities Maintenance" source="x_2025334_fac">009dc1c8c39b4350aaf4921ed4013110</sys_package>
+        <sys_parent display_value="x_2025334_fac_facility_request">ce90d140c3db4350aaf4921ed40131b8</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_scope_delete display_value="">30963e0312f84340b3966831ab907210</sys_scope_delete>
+        <sys_update_name>sys_choice_x_2025334_fac_facility_request_state</sys_update_name>
+        <sys_update_version display_value="sys_choice_x_2025334_fac_facility_request_state">85ab5148c31f4350aaf4921ed4013188</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 09:16:45</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
