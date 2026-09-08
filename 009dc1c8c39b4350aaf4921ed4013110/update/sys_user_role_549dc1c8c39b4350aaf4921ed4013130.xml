@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="INSERT_OR_UPDATE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description>Default user role</description>
+        <elevated_privilege>false</elevated_privilege>
+        <federated_id>HOeqM+mz6AcjCSag9IY/4Z3E9v6ZSZjh8bZj+d4q0lg=</federated_id>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_2025334_fac.user</name>
+        <scoped_admin>false</scoped_admin>
+        <suffix>user</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-08 08:15:15</sys_created_on>
+        <sys_id>549dc1c8c39b4350aaf4921ed4013130</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_2025334_fac.user</sys_name>
+        <sys_package display_value="Facilities Maintenance" source="x_2025334_fac">009dc1c8c39b4350aaf4921ed4013110</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_update_name>sys_user_role_549dc1c8c39b4350aaf4921ed4013130</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 08:15:15</sys_updated_on>
+    </sys_user_role>
+</record_update>
