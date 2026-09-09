@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role_contains">
+    <sys_user_role_contains action="INSERT_OR_UPDATE">
+        <contains display_value="x_2025334_fac.user" name="x_2025334_fac.user">549dc1c8c39b4350aaf4921ed4013130</contains>
+        <role display_value="x_2025334_fac.admin" name="x_2025334_fac.admin">489dc1c8c39b4350aaf4921ed4013127</role>
+        <sys_class_name>sys_user_role_contains</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-08 15:28:35</sys_created_on>
+        <sys_id>efa0ba84c3d78350aaf4921ed40131ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_2025334_fac.user.x_2025334_fac.admin</sys_name>
+        <sys_package display_value="Facilities Maintenance" source="x_2025334_fac">009dc1c8c39b4350aaf4921ed4013110</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_update_name>sys_user_role_contains_efa0ba84c3d78350aaf4921ed40131ad</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 15:28:35</sys_updated_on>
+    </sys_user_role_contains>
+</record_update>
