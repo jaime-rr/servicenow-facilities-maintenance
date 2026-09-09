@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="0e90d140c3db4350aaf4921ed40131b2" extends="task" label="Facility Request" max_length="40" name="x_2025334_fac_facility_request" type="collection">
-        <element choice="1" display="true" label="Building" mandatory="true" max_length="255" name="building" type="choice">
+        <element choice="1" label="Building" mandatory="true" max_length="255" name="building" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Building A" sequence="0" value="building_a"/>
                 <element inactive_on_update="false" label="Building B" sequence="1" value="building_b"/>
                 <element inactive_on_update="false" label="Other / Common area" sequence="2" value="other"/>
+            </choice>
+        </element>
+        <element choice="1" label="Issue category" mandatory="true" max_length="40" name="issue_category" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="HVAC failure" sequence="3" value="hvac_failure"/>
+                <element inactive_on_update="false" label="Cosmetic" sequence="4" value="cosmetic"/>
+                <element inactive_on_update="false" label="Power outage" sequence="1" value="power_outage"/>
+                <element inactive_on_update="false" label="General / not sure" sequence="5" value="general"/>
+                <element inactive_on_update="false" label="Water leak" sequence="0" value="water_leak"/>
+                <element inactive_on_update="false" label="Safety hazard" sequence="2" value="safety_hazard"/>
             </choice>
         </element>
     </element>

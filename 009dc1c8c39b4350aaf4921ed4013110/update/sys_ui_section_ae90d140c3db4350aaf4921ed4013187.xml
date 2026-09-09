@@ -4,111 +4,125 @@
             <element>building</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-09-08 09:25:34</sys_created_on>
-            <sys_id>16ad914cc31f4350aaf4921ed4013150</sys_id>
+            <sys_created_on>2026-09-09 08:41:20</sys_created_on>
+            <sys_id>4c2d921cc3170750aaf4921ed4013104</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_2025334_fac_facility_request" sys_domain="global" view="Default view">ae90d140c3db4350aaf4921ed4013187</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-09-08 09:25:34</sys_updated_on>
+            <sys_updated_on>2026-09-09 08:41:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>issue_category</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-09 08:41:20</sys_created_on>
+            <sys_id>042d921cc3170750aaf4921ed4013106</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_2025334_fac_facility_request" sys_domain="global" view="Default view">ae90d140c3db4350aaf4921ed4013187</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-09 08:41:20</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>assigned_to</element>
-            <position>1</position>
+            <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-09-08 09:25:34</sys_created_on>
-            <sys_id>daad914cc31f4350aaf4921ed4013151</sys_id>
+            <sys_created_on>2026-09-09 08:41:20</sys_created_on>
+            <sys_id>802d921cc3170750aaf4921ed4013107</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_2025334_fac_facility_request" sys_domain="global" view="Default view">ae90d140c3db4350aaf4921ed4013187</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-09-08 09:25:34</sys_updated_on>
+            <sys_updated_on>2026-09-09 08:41:20</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>2</position>
+            <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-09-08 09:25:34</sys_created_on>
-            <sys_id>5aad914cc31f4350aaf4921ed4013152</sys_id>
+            <sys_created_on>2026-09-09 08:41:20</sys_created_on>
+            <sys_id>002d921cc3170750aaf4921ed4013108</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_2025334_fac_facility_request" sys_domain="global" view="Default view">ae90d140c3db4350aaf4921ed4013187</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-09-08 09:25:34</sys_updated_on>
+            <sys_updated_on>2026-09-09 08:41:20</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>priority</element>
-            <position>3</position>
+            <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-09-08 09:25:34</sys_created_on>
-            <sys_id>d6ad914cc31f4350aaf4921ed4013153</sys_id>
+            <sys_created_on>2026-09-09 08:41:20</sys_created_on>
+            <sys_id>442d921cc3170750aaf4921ed4013115</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_2025334_fac_facility_request" sys_domain="global" view="Default view">ae90d140c3db4350aaf4921ed4013187</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-09-08 09:25:34</sys_updated_on>
+            <sys_updated_on>2026-09-09 08:41:20</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>state</element>
-            <position>4</position>
+            <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-09-08 09:25:34</sys_created_on>
-            <sys_id>56ad914cc31f4350aaf4921ed4013154</sys_id>
+            <sys_created_on>2026-09-09 08:41:20</sys_created_on>
+            <sys_id>c02d921cc3170750aaf4921ed4013116</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_2025334_fac_facility_request" sys_domain="global" view="Default view">ae90d140c3db4350aaf4921ed4013187</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-09-08 09:25:34</sys_updated_on>
+            <sys_updated_on>2026-09-09 08:41:20</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.end_split</element>
-            <position>5</position>
+            <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-09-08 09:25:34</sys_created_on>
-            <sys_id>d2ad914cc31f4350aaf4921ed4013155</sys_id>
+            <sys_created_on>2026-09-09 08:41:20</sys_created_on>
+            <sys_id>402d921cc3170750aaf4921ed4013117</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_2025334_fac_facility_request" sys_domain="global" view="Default view">ae90d140c3db4350aaf4921ed4013187</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-09-08 09:25:34</sys_updated_on>
+            <sys_updated_on>2026-09-09 08:41:20</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>short_description</element>
-            <position>6</position>
+            <position>7</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-09-08 09:25:34</sys_created_on>
-            <sys_id>52ad914cc31f4350aaf4921ed4013156</sys_id>
+            <sys_created_on>2026-09-09 08:41:20</sys_created_on>
+            <sys_id>cc2d921cc3170750aaf4921ed4013117</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_2025334_fac_facility_request" sys_domain="global" view="Default view">ae90d140c3db4350aaf4921ed4013187</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-09-08 09:25:34</sys_updated_on>
+            <sys_updated_on>2026-09-09 08:41:20</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>work_notes</element>
-            <position>7</position>
+            <position>8</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-09-08 09:25:34</sys_created_on>
-            <sys_id>dead914cc31f4350aaf4921ed4013156</sys_id>
+            <sys_created_on>2026-09-09 08:41:20</sys_created_on>
+            <sys_id>4c2d921cc3170750aaf4921ed4013118</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_2025334_fac_facility_request" sys_domain="global" view="Default view">ae90d140c3db4350aaf4921ed4013187</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-09-08 09:25:34</sys_updated_on>
+            <sys_updated_on>2026-09-09 08:41:20</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

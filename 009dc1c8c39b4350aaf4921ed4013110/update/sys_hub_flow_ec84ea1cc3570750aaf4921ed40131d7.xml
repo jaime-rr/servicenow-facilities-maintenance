@@ -1,0 +1,1080 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=5749000,viewActivatedIn=diagramming</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Automatically updates ticket priority based on issue category using Decision Builder</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>assign_facility_ticket_priority</internal_name>
+        <label_cache>[{"name":"Updated_1.current.current","label":"Trigger - Record Updated➛Record","type":"reference","base_type":"reference","choices":[{"order":0.0}],"usedInstances":{"2d5588df-bbbb-4122-b556-a5e85789b897":["condition"]},"attributes":{"":""}},{"name":"4e4852b9-89b7-4e9d-aeb5-824f7c61867f.answer.result_elements.u_priority","label":"2➛sys_decision_multi_result Record➛Result elements➛Priority","reference":"","reference_display":"Priority","type":"choice","base_type":"choice","parent_table_name":"var__m_sys_decision_multi_result_element_61626218c3570750aaf4921ed401318e","column_name":"u_priority","choices":[{"label":"-- None --","sequence":-1.0,"selected":false,"used":false,"image":"","reference":false,"rawLabel":"-- None --","missing":false,"value":""},{"parameters":{"name":"task","dependent_values":[""],"dependent_values_map":{"":"1 - Critical"}},"label":"1 - Critical","sequence":1.0,"selected":false,"used":false,"image":"","reference":false,"rawLabel":"1 - Critical","missing":false,"value":"1"},{"parameters":{"name":"task","dependent_values":[""],"dependent_values_map":{"":"2 - High"}},"label":"2 - High","sequence":2.0,"selected":false,"used":false,"image":"","reference":false,"rawLabel":"2 - High","missing":false,"value":"2"},{"parameters":{"name":"task","dependent_values":[""],"dependent_values_map":{"":"3 - Moderate"}},"label":"3 - Moderate","sequence":3.0,"selected":false,"used":false,"image":"","reference":false,"rawLabel":"3 - Moderate","missing":false,"value":"3"},{"parameters":{"name":"task","dependent_values":[""],"dependent_values_map":{"":"4 - Low"}},"label":"4 - Low","sequence":4.0,"selected":false,"used":false,"image":"","reference":false,"rawLabel":"4 - Low","missing":false,"value":"4"},{"parameters":{"name":"task","dependent_values":[""],"dependent_values_map":{"":"5 - Planning"}},"label":"5 - Planning","sequence":5.0,"selected":false,"used":false,"image":"","reference":false,"rawLabel":"5 - Planning","missing":false,"value":"5"}],"usedInstances":{"44135799-c38b-451e-aa1e-75fa1835de42":["priority"]}},{"name":"Created or Updated_1.changed_fields","label":"Trigger - Record Created or Updated➛Changed Fields","type":"array.object","base_type":"array.object","usedInstances":{"2d5588df-bbbb-4122-b556-a5e85789b897":["condition"]},"attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FDCollection","child_label":"FDChangeDetails","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"array.object","child_type":"object","child_name":"FDChangeDetails"}},{"name":"Created or Updated_1.current.issue_category","label":"Trigger - Record Created or Updated➛Facility Request Record➛Issue category","reference":"","reference_display":"Issue category","type":"choice","base_type":"choice","parent_table_name":"x_2025334_fac_facility_request","column_name":"issue_category","choices":[{"label":"-- None --","sequence":-1.0,"selected":false,"used":false,"image":"","reference":false,"rawLabel":"-- None --","missing":false,"value":""},{"parameters":{"name":"x_2025334_fac_facility_request","dependent_values":[""],"dependent_values_map":{"":"Water leak"}},"label":"Water leak","sequence":0.0,"selected":false,"used":false,"image":"","reference":false,"rawLabel":"Water leak","missing":false,"value":"water_leak"},{"parameters":{"name":"x_2025334_fac_facility_request","dependent_values":[""],"dependent_values_map":{"":"Power outage"}},"label":"Power outage","sequence":1.0,"selected":false,"used":false,"image":"","reference":false,"rawLabel":"Power outage","missing":false,"value":"power_outage"},{"parameters":{"name":"x_2025334_fac_facility_request","dependent_values":[""],"dependent_values_map":{"":"Safety hazard"}},"label":"Safety hazard","sequence":2.0,"selected":false,"used":false,"image":"","reference":false,"rawLabel":"Safety hazard","missing":false,"value":"safety_hazard"},{"parameters":{"name":"x_2025334_fac_facility_request","dependent_values":[""],"dependent_values_map":{"":"HVAC failure"}},"label":"HVAC failure","sequence":3.0,"selected":false,"used":false,"image":"","reference":false,"rawLabel":"HVAC failure","missing":false,"value":"hvac_failure"},{"parameters":{"name":"x_2025334_fac_facility_request","dependent_values":[""],"dependent_values_map":{"":"Cosmetic"}},"label":"Cosmetic","sequence":4.0,"selected":false,"used":false,"image":"","reference":false,"rawLabel":"Cosmetic","missing":false,"value":"cosmetic"},{"parameters":{"name":"x_2025334_fac_facility_request","dependent_values":[""],"dependent_values_map":{"":"General / not sure"}},"label":"General / not sure","sequence":5.0,"selected":false,"used":false,"image":"","reference":false,"rawLabel":"General / not sure","missing":false,"value":"general"}],"usedInstances":{"4e4852b9-89b7-4e9d-aeb5-824f7c61867f":["u_issue_category"],"b40d78d5-1e0c-4b24-ba35-08a1cc2cb193":["u_issue_category"],"21436fc6-0d5b-43a1-afb4-35c503297470":["condition"]}},{"name":"Created or Updated_1.table_name","label":"Trigger - Record Created or Updated➛Facility Request Table","reference":"x_2025334_fac_facility_request","reference_display":"Facility Request","type":"table_name","base_type":"table_name","usedInstances":{"44135799-c38b-451e-aa1e-75fa1835de42":["table_name"]},"attributes":{"test_input_hidden":"true"}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Facility Request Record","reference":"x_2025334_fac_facility_request","reference_display":"Facility Request","type":"reference","base_type":"reference","usedInstances":{"44135799-c38b-451e-aa1e-75fa1835de42":["record"],"86ac34ea-7cee-410a-b14e-faff622feffc":["record"],"4086dcd0-5262-4ecc-b175-0badde49adc7":["record"]},"attributes":{}},{"name":"b40d78d5-1e0c-4b24-ba35-08a1cc2cb193.answer.result_elements.u_priority","label":"1 - Make a decision➛sys_decision_multi_result Record➛Result elements➛Priority","reference":"","reference_display":"Priority","type":"choice","base_type":"choice","parent_table_name":"var__m_sys_decision_multi_result_element_61626218c3570750aaf4921ed401318e","column_name":"u_priority","choices":[{"label":"-- None --","sequence":-1.0,"selected":false,"used":false,"image":"","reference":false,"rawLabel":"-- None --","missing":false,"value":""},{"parameters":{"name":"task","dependent_values":[""],"dependent_values_map":{"":"1 - Critical"}},"label":"1 - Critical","sequence":1.0,"selected":false,"used":false,"image":"","reference":false,"rawLabel":"1 - Critical","missing":false,"value":"1"},{"parameters":{"name":"task","dependent_values":[""],"dependent_values_map":{"":"2 - High"}},"label":"2 - High","sequence":2.0,"selected":false,"used":false,"image":"","reference":false,"rawLabel":"2 - High","missing":false,"value":"2"},{"parameters":{"name":"task","dependent_values":[""],"dependent_values_map":{"":"3 - Moderate"}},"label":"3 - Moderate","sequence":3.0,"selected":false,"used":false,"image":"","reference":false,"rawLabel":"3 - Moderate","missing":false,"value":"3"},{"parameters":{"name":"task","dependent_values":[""],"dependent_values_map":{"":"4 - Low"}},"label":"4 - Low","sequence":4.0,"selected":false,"used":false,"image":"","reference":false,"rawLabel":"4 - Low","missing":false,"value":"4"},{"parameters":{"name":"task","dependent_values":[""],"dependent_values_map":{"":"5 - Planning"}},"label":"5 - Planning","sequence":5.0,"selected":false,"used":false,"image":"","reference":false,"rawLabel":"5 - Planning","missing":false,"value":"5"}],"usedInstances":{"86ac34ea-7cee-410a-b14e-faff622feffc":["issue_category"],"4086dcd0-5262-4ecc-b175-0badde49adc7":["priority"]}}]</label_cache>
+        <master_snapshot>e34aae18c3970750aaf4921ed4013149</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Assign Facility Ticket Priority</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>e47a7a1cc31b0750aaf4921ed4013145</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-09 09:13:35</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ec84ea1cc3570750aaf4921ed40131d7</sys_id>
+        <sys_mod_count>67</sys_mod_count>
+        <sys_name>Assign Facility Ticket Priority</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Facilities Maintenance" source="x_2025334_fac">009dc1c8c39b4350aaf4921ed4013110</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_update_name>sys_hub_flow_ec84ea1cc3570750aaf4921ed40131d7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-09 10:49:28</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record>7c7a7a1cc31b0750aaf4921ed40131a7</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=ec84ea1cc3570750aaf4921ed40131d7"/>
+    <sys_variable_value action="delete_multiple" query="document_key=ec84ea1cc3570750aaf4921ed40131d7"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_2025334_fac_facility_request">issue_categoryVALCHANGES<item display_value="-- None --" endquery="false" field="issue_category" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>true</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-09 10:49:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e47a7a1cc31b0750aaf4921ed4013145</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-09 10:49:26</sys_updated_on>
+        <table>x_2025334_fac_facility_request</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>ec84ea1cc3570750aaf4921ed40131d7</identifier>
+        <identifier_type>flow</identifier_type>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-09 10:49:26</sys_created_on>
+        <sys_id>a87a7a1cc31b0750aaf4921ed401315f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-09 10:49:26</sys_updated_on>
+        <trigger display_value="">e47a7a1cc31b0750aaf4921ed4013145</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=ec84ea1cc3570750aaf4921ed40131d7^sys_idNOT INa87a7a1cc31b0750aaf4921ed401315f"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=ec84ea1cc3570750aaf4921ed40131d7"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=ec84ea1cc3570750aaf4921ed40131d7^sys_idNOT IN2884ea1cc3570750aaf4921ed40131dc"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>ec84ea1cc3570750aaf4921ed40131d7</id>
+        <name>Assign Facility Ticket Priority</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-09 09:13:35</sys_created_on>
+        <sys_id>2884ea1cc3570750aaf4921ed40131dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-09 09:13:35</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=2884ea1cc3570750aaf4921ed40131dc"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=ec84ea1cc3570750aaf4921ed40131d7^sys_idNOT IN11a4e25cc3570750aaf4921ed401314d,15a4e25cc3570750aaf4921ed4013117,95a4e25cc3570750aaf4921ed4013141"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Assign Facility Ticket Priority">ec84ea1cc3570750aaf4921ed40131d7</model>
+        <model_id>ec84ea1cc3570750aaf4921ed40131d7</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_ec84ea1cc3570750aaf4921ed40131d7</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-09 09:14:11</sys_created_on>
+        <sys_id>11a4e25cc3570750aaf4921ed401314d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-09 09:14:11</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=11a4e25cc3570750aaf4921ed401314d"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Assign Facility Ticket Priority">ec84ea1cc3570750aaf4921ed40131d7</model>
+        <model_id>ec84ea1cc3570750aaf4921ed40131d7</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_ec84ea1cc3570750aaf4921ed40131d7</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-09 09:14:11</sys_created_on>
+        <sys_id>15a4e25cc3570750aaf4921ed4013117</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-09 09:22:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=15a4e25cc3570750aaf4921ed4013117"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Assign Facility Ticket Priority">ec84ea1cc3570750aaf4921ed40131d7</model>
+        <model_id>ec84ea1cc3570750aaf4921ed40131d7</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_ec84ea1cc3570750aaf4921ed40131d7</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-09 09:14:11</sys_created_on>
+        <sys_id>95a4e25cc3570750aaf4921ed4013141</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-09 09:22:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=95a4e25cc3570750aaf4921ed4013141"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=ec84ea1cc3570750aaf4921ed40131d7"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ec84ea1cc3570750aaf4921ed40131d7"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=ec84ea1cc3570750aaf4921ed40131d7^sys_idNOT IN79b1b658c3d70750aaf4921ed40131f8"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Assign Facility Ticket Priority">ec84ea1cc3570750aaf4921ed40131d7</flow>
+        <generation_source/>
+        <name>Created or Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-09 10:11:17</sys_created_on>
+        <sys_id>79b1b658c3d70750aaf4921ed40131f8</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-09 10:24:46</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=ec84ea1cc3570750aaf4921ed40131d7^sys_idNOT IN881a7ad8c31b0750aaf4921ed401311a"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Assign Facility Ticket Priority">ec84ea1cc3570750aaf4921ed40131d7</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-09 10:47:46</sys_created_on>
+        <sys_id>881a7ad8c31b0750aaf4921ed401311a</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-09-09 10:49:41</sys_updated_on>
+        <ui_id>4086dcd0-5262-4ecc-b175-0badde49adc7</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVW0vjQBj9K2We25Bb3dq3xVJYcBV01xdXwmTmiw5MLs5F7Yb+9/0mmcSi4lZwH8oWCp3vNuecfie5bongZElS4GF0HB2xJEqSOAzjRRrlR0kexTyhABGZkoqWgJUKWK04nh+otC7QticKqAE+qdXkZ8PdzywKmFUKKrPdYikXupF0c+U7MMLuhOSYJ8vrmylpqMLhBhRZti9S+6KTNAeJpRcDvJdwzaZxZ14zWyKuTAzBU9+58pnJtxVmsMnBicIpgScDFQcEUlCpYUpKWiHLWm3I0iiLAeTPzyu5GSvuRGV6oiV90uI33pyGrq4AZMa8COMx8wL14WJFDb3EycxYNepVCwa614RDQa00J7uxvuC8MaKu+hZDczl019KW1VmvCBkH7PwfViMIaBxPh7ynVVze1Y8XA8i1qDpJPEVZMyrHEzVGidwaB6clIKHTuKRNI6rbrFH1g+iaEUoZ3Eo8BIWsH/FOLW6rgDKHO0BVabDG+KoLX1ElHInvOAabt1OiN/pEUq2fqaCG2b11SHpinkLWqdBJkHWb4JqZEo35ilc9gAe+nfr9z+fvbRg7fl6onZnPHnjK4jCeJ0maFZS5r5DCbDIF9xa0ee2Ata+YXIwVH3PEHngHR/zo9uBt/N4Ur2Knu72Tsz7hLTH/NEssDskSnsbBe+JvTgjjd5+1O5vULb/ecUGjRK1wq3/ZMEx42+ZpyL8s+HwWQchmaR6ns5wm81m4oBFjMcuj4ySglX4EFSjQKH/mVdKBzYZpb71B/uFNH/PhHmoNPlwLkFy/Id9gQiiRooGsl/OFEX1ycuWT4/vp09wYHYXd54A8+d+8pm7+AAWx0ZaoCQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=881a7ad8c31b0750aaf4921ed401311a"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=ec84ea1cc3570750aaf4921ed40131d7"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=ec84ea1cc3570750aaf4921ed40131d7^sys_idNOT IN0353be1cc3d70750aaf4921ed40131ee"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">37b33e5cc3d70750aaf4921ed40131b7</block>
+        <comment/>
+        <connected_to/>
+        <decision_table display_value="Facility Priority Assignment">61626218c3570750aaf4921ed401318e</decision_table>
+        <display_text/>
+        <flow display_value="Assign Facility Ticket Priority">ec84ea1cc3570750aaf4921ed40131d7</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Make a decision">578e90270b2313009002cab937673a7d</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-09 10:18:28</sys_created_on>
+        <sys_id>0353be1cc3d70750aaf4921ed40131ee</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-09 10:49:24</sys_updated_on>
+        <ui_id>b40d78d5-1e0c-4b24-ba35-08a1cc2cb193</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VYWXPbNhD+KyyfbZmHREl+6bh23GamjdM6cR9ah7MEQQsTiFAAULLi8X/vgpegy7ZktdO0TxIW2PvbXYAPrij0pNDqgzhTit3l7ukft0cuyw0N/z+4OYype+qmlDDFRB5zSCh3j9wp8MJsvJdMSKbnTnPC0ZBwiidSpiYc5jfPHiQjxlNJa90TkKhSU+mePqxs6fmE1gacutdasvwO2VmKqyCNICDQ95Ig9EPPG3oeLpNh2I/6IWQZnmsYLxr9P9eubHPRqEO6ahQJmRqrekcuvdc0TykqzoAreuSOIU9BCzlvKZJCepXzBWHEco3SXHP4XrGvKDro9czBjKKHhFab7TKu41eRyUgwQq8mGg2sKFX0qk3Bi3H+rnLDRJ5mUHDdRB4phUJ5dGKMNlbUJmXXIzH7rVF4yfLSv3qTCwK8XYHGKCSFpsqkhXI6RkHxGCYTjE08kWLKSma0Zdy547joZFzMUKlBVQeIMbyDMYLOJdIvSvINSGa8+AXFIPNj6X38pTB6Kz9qi+PKaTygiGQTfYbiprQ27vFoHaUNtBqURn4URIE/IGGv7/V7HkDWHQY+TbueH/qDDXC9BMK4gWuL26pAjN97Y7aNdQNbGIKXkCDZDFsSbYLth9q3bT7XsJWWrhq5vvc0dLUsXojcMFgGrpqruDFkC4jX7P8/QBpDP6VSIm9cSJPFk1zMTppIVZKoPBmJMf2+Evhn4XlhynJFpcEZpGnM8jins3iGzogZyjBpwi2aMr1tT2EUYuRdoSgKkoxWiJJy0DSNOVO62VouRSjLrbLMbH8y6SYclIoNCL+rdmwM4B+u4dObX/epYnpPSaErJDUFnDGpTHI0mr9eq2bTmisj0E55FFO7b6mel+hs6nRAoigcQLa5TkN7vLyxrN/gUF2dpBHflObhpkrX222oVHO+Mf/pWG5OR+2DZ3LYtroid4DzVpKyRFmCZJHHeMwKxONtW+3nh7XPP4R9gbFvpXWFO/WuFShXmxe7IPqbaH2vn+aQqxmVa7N8qc+MMXYMW5jC3/XG8NTR/dpCObycMrd1a+iSJE2yYRevFoMAW0Mw6PpJFCZ+kIZAE3uEn5UOrQ7wFTfrBlEuy/Zqz+9nBvgOXWKwY5f4r8/pKYLERBwHambSWio/AIhHoOJEQr7SoLx1sFYa9wYmzuWTy1pECcx+FmS9bOj3Qy/wPN8jSUbJMA3CbhZBf5hYwPyoqPPDwsjNptfATITgFPK/B5W7zq79UOlv7bv1veiwmH09iFhOeIF3SKFHVM6Yov8sksJulIQehB72tfXbT49aSHpbWepcWZY+4cQ2TAXfHKa+lU63LxhvDeIqSaoCTTNYy3H2dvHFqIRMMkwCGm19cKcLWBQxU6qgMcFHyJ3J7QLaDw/nmGB8mzhCOh8naflM8TukkBhL3Vnme3xcL4TdBez3PHiBt22BGJ3O+cLZ7WHY9lR4rjZe/ox/3VPh+Nh5J3LqHB9bOdvyHPgd3ZIOFvln6+zMEOOauOmS/l6Y+5IoNNzZLW9iyHFLbm/mFuc1ZFTPnRF8BZnal8eSHrf0mje0eX+6OTt3MmC8kLbW0RRIvCDXnF2b81woBA8jFhdZkJrvhzbHjxTf/8CdEycX2lHLGu+qzQVr9Mzj6JmM+HtlJNg7I+ErMtLdOyO9nTMS7Z+R/obnoG8Njvs48IJeGHbRTmNr9VERXyFfCqr06lhZawH/jiGz/ImxGjAXdvc/3IxJ59gPGWnHCZJmQn42Y25Be/wLQDfWurcYAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=ec84ea1cc3570750aaf4921ed40131d7^sys_idNOT IN6b403694c3d70750aaf4921ed40131a3,e22ca25cc3970750aaf4921ed4013192"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>ec84ea1cc3570750aaf4921ed40131d7</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.current}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-09 10:05:07</sys_created_on>
+        <sys_id>6b403694c3d70750aaf4921ed40131a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-09 10:05:07</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>cb189bc7-daec-4de6-9d54-354fdb7a0189</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>ec84ea1cc3570750aaf4921ed40131d7</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.current.issue_category}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-09 09:47:03</sys_created_on>
+        <sys_id>e22ca25cc3970750aaf4921ed4013192</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-09 09:47:03</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>feac06b3-4a20-453c-a754-7b931e44bfea</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=ec84ea1cc3570750aaf4921ed40131d7"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_ec84ea1cc3570750aaf4921ed40131d7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-09 09:14:11</sys_created_on>
+        <sys_id>55a4e25cc3570750aaf4921ed401313c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Facilities Maintenance" source="x_2025334_fac">009dc1c8c39b4350aaf4921ed4013110</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-09 09:14:11</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_ec84ea1cc3570750aaf4921ed40131d7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-09 09:14:11</sys_created_on>
+        <sys_id>5da4e25cc3570750aaf4921ed401316d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Facilities Maintenance" source="x_2025334_fac">009dc1c8c39b4350aaf4921ed4013110</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-09 09:14:11</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_ec84ea1cc3570750aaf4921ed40131d7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-09 09:14:11</sys_created_on>
+        <sys_id>95a4e25cc3570750aaf4921ed4013148</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Facilities Maintenance" source="x_2025334_fac">009dc1c8c39b4350aaf4921ed4013110</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-09 09:14:11</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_ec84ea1cc3570750aaf4921ed40131d7"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_ec84ea1cc3570750aaf4921ed40131d7"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=diagramming</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Automatically updates ticket priority based on issue category using Decision Builder</description>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>assign_facility_ticket_priority</internal_name>
+        <label_cache>[{"name":"Updated_1.current.current","label":"Trigger - Record Updated➛Record","type":"reference","base_type":"reference","choices":[{"order":0.0}],"usedInstances":{"2d5588df-bbbb-4122-b556-a5e85789b897":["condition"]},"attributes":{"":""}},{"name":"4e4852b9-89b7-4e9d-aeb5-824f7c61867f.answer.result_elements.u_priority","label":"2➛sys_decision_multi_result Record➛Result elements➛Priority","reference":"","reference_display":"Priority","type":"choice","base_type":"choice","parent_table_name":"var__m_sys_decision_multi_result_element_61626218c3570750aaf4921ed401318e","column_name":"u_priority","choices":[{"label":"-- None --","sequence":-1.0,"selected":false,"used":false,"image":"","reference":false,"rawLabel":"-- None --","missing":false,"value":""},{"parameters":{"name":"task","dependent_values":[""],"dependent_values_map":{"":"1 - Critical"}},"label":"1 - Critical","sequence":1.0,"selected":false,"used":false,"image":"","reference":false,"rawLabel":"1 - Critical","missing":false,"value":"1"},{"parameters":{"name":"task","dependent_values":[""],"dependent_values_map":{"":"2 - High"}},"label":"2 - High","sequence":2.0,"selected":false,"used":false,"image":"","reference":false,"rawLabel":"2 - High","missing":false,"value":"2"},{"parameters":{"name":"task","dependent_values":[""],"dependent_values_map":{"":"3 - Moderate"}},"label":"3 - Moderate","sequence":3.0,"selected":false,"used":false,"image":"","reference":false,"rawLabel":"3 - Moderate","missing":false,"value":"3"},{"parameters":{"name":"task","dependent_values":[""],"dependent_values_map":{"":"4 - Low"}},"label":"4 - Low","sequence":4.0,"selected":false,"used":false,"image":"","reference":false,"rawLabel":"4 - Low","missing":false,"value":"4"},{"parameters":{"name":"task","dependent_values":[""],"dependent_values_map":{"":"5 - Planning"}},"label":"5 - Planning","sequence":5.0,"selected":false,"used":false,"image":"","reference":false,"rawLabel":"5 - Planning","missing":false,"value":"5"}],"usedInstances":{"44135799-c38b-451e-aa1e-75fa1835de42":["priority"]}},{"name":"Created or Updated_1.changed_fields","label":"Trigger - Record Created or Updated➛Changed Fields","type":"array.object","base_type":"array.object","usedInstances":{"2d5588df-bbbb-4122-b556-a5e85789b897":["condition"]},"attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FDCollection","child_label":"FDChangeDetails","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"array.object","child_type":"object","child_name":"FDChangeDetails"}},{"name":"Created or Updated_1.current.issue_category","label":"Trigger - Record Created or Updated➛Facility Request Record➛Issue category","reference":"","reference_display":"Issue category","type":"choice","base_type":"choice","parent_table_name":"x_2025334_fac_facility_request","column_name":"issue_category","choices":[{"label":"-- None --","sequence":-1.0,"selected":false,"used":false,"image":"","reference":false,"rawLabel":"-- None --","missing":false,"value":""},{"parameters":{"name":"x_2025334_fac_facility_request","dependent_values":[""],"dependent_values_map":{"":"Water leak"}},"label":"Water leak","sequence":0.0,"selected":false,"used":false,"image":"","reference":false,"rawLabel":"Water leak","missing":false,"value":"water_leak"},{"parameters":{"name":"x_2025334_fac_facility_request","dependent_values":[""],"dependent_values_map":{"":"Power outage"}},"label":"Power outage","sequence":1.0,"selected":false,"used":false,"image":"","reference":false,"rawLabel":"Power outage","missing":false,"value":"power_outage"},{"parameters":{"name":"x_2025334_fac_facility_request","dependent_values":[""],"dependent_values_map":{"":"Safety hazard"}},"label":"Safety hazard","sequence":2.0,"selected":false,"used":false,"image":"","reference":false,"rawLabel":"Safety hazard","missing":false,"value":"safety_hazard"},{"parameters":{"name":"x_2025334_fac_facility_request","dependent_values":[""],"dependent_values_map":{"":"HVAC failure"}},"label":"HVAC failure","sequence":3.0,"selected":false,"used":false,"image":"","reference":false,"rawLabel":"HVAC failure","missing":false,"value":"hvac_failure"},{"parameters":{"name":"x_2025334_fac_facility_request","dependent_values":[""],"dependent_values_map":{"":"Cosmetic"}},"label":"Cosmetic","sequence":4.0,"selected":false,"used":false,"image":"","reference":false,"rawLabel":"Cosmetic","missing":false,"value":"cosmetic"},{"parameters":{"name":"x_2025334_fac_facility_request","dependent_values":[""],"dependent_values_map":{"":"General / not sure"}},"label":"General / not sure","sequence":5.0,"selected":false,"used":false,"image":"","reference":false,"rawLabel":"General / not sure","missing":false,"value":"general"}],"usedInstances":{"4e4852b9-89b7-4e9d-aeb5-824f7c61867f":["u_issue_category"],"b40d78d5-1e0c-4b24-ba35-08a1cc2cb193":["u_issue_category"],"21436fc6-0d5b-43a1-afb4-35c503297470":["condition"]}},{"name":"Created or Updated_1.table_name","label":"Trigger - Record Created or Updated➛Facility Request Table","reference":"x_2025334_fac_facility_request","reference_display":"Facility Request","type":"table_name","base_type":"table_name","usedInstances":{"44135799-c38b-451e-aa1e-75fa1835de42":["table_name"]},"attributes":{"test_input_hidden":"true"}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Facility Request Record","reference":"x_2025334_fac_facility_request","reference_display":"Facility Request","type":"reference","base_type":"reference","usedInstances":{"44135799-c38b-451e-aa1e-75fa1835de42":["record"],"86ac34ea-7cee-410a-b14e-faff622feffc":["record"],"4086dcd0-5262-4ecc-b175-0badde49adc7":["record"]},"attributes":{}},{"name":"b40d78d5-1e0c-4b24-ba35-08a1cc2cb193.answer.result_elements.u_priority","label":"1 - Make a decision➛sys_decision_multi_result Record➛Result elements➛Priority","reference":"","reference_display":"Priority","type":"choice","base_type":"choice","parent_table_name":"var__m_sys_decision_multi_result_element_61626218c3570750aaf4921ed401318e","column_name":"u_priority","choices":[{"label":"-- None --","sequence":-1.0,"selected":false,"used":false,"image":"","reference":false,"rawLabel":"-- None --","missing":false,"value":""},{"parameters":{"name":"task","dependent_values":[""],"dependent_values_map":{"":"1 - Critical"}},"label":"1 - Critical","sequence":1.0,"selected":false,"used":false,"image":"","reference":false,"rawLabel":"1 - Critical","missing":false,"value":"1"},{"parameters":{"name":"task","dependent_values":[""],"dependent_values_map":{"":"2 - High"}},"label":"2 - High","sequence":2.0,"selected":false,"used":false,"image":"","reference":false,"rawLabel":"2 - High","missing":false,"value":"2"},{"parameters":{"name":"task","dependent_values":[""],"dependent_values_map":{"":"3 - Moderate"}},"label":"3 - Moderate","sequence":3.0,"selected":false,"used":false,"image":"","reference":false,"rawLabel":"3 - Moderate","missing":false,"value":"3"},{"parameters":{"name":"task","dependent_values":[""],"dependent_values_map":{"":"4 - Low"}},"label":"4 - Low","sequence":4.0,"selected":false,"used":false,"image":"","reference":false,"rawLabel":"4 - Low","missing":false,"value":"4"},{"parameters":{"name":"task","dependent_values":[""],"dependent_values_map":{"":"5 - Planning"}},"label":"5 - Planning","sequence":5.0,"selected":false,"used":false,"image":"","reference":false,"rawLabel":"5 - Planning","missing":false,"value":"5"}],"usedInstances":{"86ac34ea-7cee-410a-b14e-faff622feffc":["issue_category"],"4086dcd0-5262-4ecc-b175-0badde49adc7":["priority"]}}]</label_cache>
+        <master>true</master>
+        <name>Assign Facility Ticket Priority</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Assign Facility Ticket Priority">ec84ea1cc3570750aaf4921ed40131d7</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-09 09:38:55</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e34aae18c3970750aaf4921ed4013149</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-09 10:49:26</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=e34aae18c3970750aaf4921ed4013149"/>
+    <sys_variable_value action="delete_multiple" query="document_key=e34aae18c3970750aaf4921ed4013149"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=e34aae18c3970750aaf4921ed4013149"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=e34aae18c3970750aaf4921ed4013149^sys_idNOT IN2b4aae18c3970750aaf4921ed401314b"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>e34aae18c3970750aaf4921ed4013149</id>
+        <name>Assign Facility Ticket Priority</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-09 09:38:55</sys_created_on>
+        <sys_id>2b4aae18c3970750aaf4921ed401314b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-09 09:38:55</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=2b4aae18c3970750aaf4921ed401314b"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=e34aae18c3970750aaf4921ed4013149^sys_idNOT IN7b4aae18c3970750aaf4921ed4013160,a34aae18c3970750aaf4921ed401314d,b74aae18c3970750aaf4921ed4013179"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Assign Facility Ticket Priority">e34aae18c3970750aaf4921ed4013149</model>
+        <model_id>e34aae18c3970750aaf4921ed4013149</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_e34aae18c3970750aaf4921ed4013149</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-09 09:38:55</sys_created_on>
+        <sys_id>7b4aae18c3970750aaf4921ed4013160</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-09 09:52:13</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7b4aae18c3970750aaf4921ed4013160"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Assign Facility Ticket Priority">e34aae18c3970750aaf4921ed4013149</model>
+        <model_id>e34aae18c3970750aaf4921ed4013149</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_e34aae18c3970750aaf4921ed4013149</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-09 09:38:55</sys_created_on>
+        <sys_id>a34aae18c3970750aaf4921ed401314d</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-09 10:49:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a34aae18c3970750aaf4921ed401314d"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Assign Facility Ticket Priority">e34aae18c3970750aaf4921ed4013149</model>
+        <model_id>e34aae18c3970750aaf4921ed4013149</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_e34aae18c3970750aaf4921ed4013149</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-09 09:38:56</sys_created_on>
+        <sys_id>b74aae18c3970750aaf4921ed4013179</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-09 10:49:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b74aae18c3970750aaf4921ed4013179"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=e34aae18c3970750aaf4921ed4013149"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e34aae18c3970750aaf4921ed4013149"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=e34aae18c3970750aaf4921ed4013149^sys_idNOT INb74aae18c3970750aaf4921ed40131ba"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Assign Facility Ticket Priority">e34aae18c3970750aaf4921ed4013149</flow>
+        <generation_source/>
+        <name>Created or Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-09 09:38:56</sys_created_on>
+        <sys_id>b74aae18c3970750aaf4921ed40131ba</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-09 10:49:25</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9Vaa2/bNhT9K4I+bYA76GFbcfYpy2MNkCaA7XYfikKgKMomRlOuRClxi/73Xephy3rFjuTOLVA0Jhny3MtzzyHNfv6uMuQQpl6qc+Qwog5UygUJOGLzzZpAs5DNNkcr2bdC3EXCDzbqpQgiMlC9wF/NyWrNkIDBHmIhNPqBSwL1Uh+oMWIRmW3Cexdmgt9PpsnmVLNu+PxiG5oxMs2h7SEs/1JGxcYOyNeIhAIGujSEJTafsvF32Qhluh2Bl5S5AeHq5ecvA3WNAlhJSBTfS11UQsGeTvTJhYZNA/5omnEx1J2x6eiGayKCNJiwnJYSdFGTnV3c5EUQ7hJ3m5JK4gKC3CfONoURLyH9BnNeaLLXI4AYkzRt2492loi0GS99isnTWlCfpy0purTTZ9GKP6aoZQqJhyIm8hRCSxTCfGQtgXKxxeHNlv7zNF/wjvIkpqyT+Rix7SckRECdSJBQptmjDBJupxkJ/ShI0E9vr5+mN/Y/V/Pr97dTe3o7m0/vr+e3N+qPJC77ayRnTBFmWOw0nB/bfb+jhMlt49HKATQDNcQBXYsrLGic0+7HYEfla5+7NMlKhc447wr36ZxH38ZnTWtkNC6smLOahmFEbAwzLWCJT1cP1++vHv++nR3NVkuzXFdvYit2CmwtRl4DTdQkoRhdG2+zlmbiDjXtf6JupkVvZW4ete2vSSCjhVZ1t19/Zv/eTZ8+5D/PnwDFM+IitIVvI9e1CzkFWQBAkl++S9jNDie008UCioTydSTCV0sgzUm1Dl6vgCDiMIW93c9qHSQbsN2JBwoqevkZqngmJTXZvncgZF6e9Cwi7yFbYBpxxecKjgLItlCAJkq+mJLAltTy7ldokW0ZTMwIFgVueR/D4qcPUC+ULwrBNGFJBlTBsE0RUS7UXTB86VMiqlsSl+IpudzROqHjoaGZzlizpEro8KOna5Y2Qp5rappzUdCJKphGlKJEmB714ji1CBOCsgP2vJzYDLJWrJCDCBzvsz8PXRIjE6XrfqDpPUEzJLSSuJpHqeuWjGnzzT4n20Lr+TyB3BjBb7h5jIecFw5QRY/5z6C/3RXR8wOyCPyIu2UpkksoFP7dG3EaLXQQ/rcdxW6E8lu2qb+fmy7uNiWui6urMBqmTqzxcKyBHppSCkeTiYOR4XnW2CK6XhLGHZpaiGcsiK/seW1ym8SxlsVxHfmPkMUOACsSeTTA7uKI+KZRGtO+X0MEn5eE2wA1sBlNrs8lLVww6pK8r99Srywd76q6a51jZ+KORpaFLbgkQZ17Q+IgfWiM0MQam8Qr1XkFShtMUZOZE16dwk2YLN+gAR/TrvP6BuCUZA2JENKBOtt28usoXa/gmHJflERV/ECR2VXudwOVGQH/S27Qp7JxXywrBg5I/oL2PSTyMPjo83c16E544+JwJTgkcQ3Izu24UWJUvL8JXVUIGQaa6GaDClnjOhXagWmGeabnjgMJEDdSqe4Acmg5xrVV3XhieENFlchRPEq0nHX6Soree1KM0yXF7Hy+yiuw8e75FrC/kMslB47erM7nxPa9WrGmnpJ9F0lcxdkoYkkgtwxO1LCyImGc0E3Sk3LF66BZyY48J7MxuSflpNz4CnQowU9Jy2m8rMSbeP+60tHPiGviidvkZ0Or8VTdbGql7jN1tqOJEdfxrNXejpu3PGetwRXKaJ8HB1pXr1HX+1e3qGsd7LWou3tT292/BsX5u44EPU+3oQ+vwaVrAe76+tIi5CQmwZ6H3EHyk0YlWrtSRU+2dMTpV/msu0R8kT5y7WFAeKmkQ5R0yAltlD2jTbifdCgwKC5Zv9m389AAlcxTnf2pxmW0GFf+DhqKQD6PbwpVm29t5+98nQnU6kjDpq6blUfzUfHRfL8QmiE22JTxVpta0uRRuLB8xmFBVyQRxe2jsrJCAi9JOFCAZMkDTKKZNAhFMvoPtcf7HC4+VGWFXedijYSPm2ql0RVaSBuX6V5nAzX1XyZU0Qhab24t4eu9hG/0Eb75tvCHnX0wy0i9EWbZ69n8Mj879r8LqfUW+OU/oFTphvUmAAA=</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=e34aae18c3970750aaf4921ed4013149^sys_idNOT IN147a3a1cc31b0750aaf4921ed40131aa"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Assign Facility Ticket Priority">e34aae18c3970750aaf4921ed4013149</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-09 10:49:25</sys_created_on>
+        <sys_id>147a3a1cc31b0750aaf4921ed40131aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-09 10:49:25</sys_updated_on>
+        <ui_id>4086dcd0-5262-4ecc-b175-0badde49adc7</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVW0vjQBj9K2We25Bb3dq3xVJYcBV01xdXwmTmiw5MLs5F7Yb+9/0mmcSi4lZwH8oWCp3vNuecfie5bongZElS4GF0HB2xJEqSOAzjRRrlR0kexTyhABGZkoqWgJUKWK04nh+otC7QticKqAE+qdXkZ8PdzywKmFUKKrPdYikXupF0c+U7MMLuhOSYJ8vrmylpqMLhBhRZti9S+6KTNAeJpRcDvJdwzaZxZ14zWyKuTAzBU9+58pnJtxVmsMnBicIpgScDFQcEUlCpYUpKWiHLWm3I0iiLAeTPzyu5GSvuRGV6oiV90uI33pyGrq4AZMa8COMx8wL14WJFDb3EycxYNepVCwa614RDQa00J7uxvuC8MaKu+hZDczl019KW1VmvCBkH7PwfViMIaBxPh7ynVVze1Y8XA8i1qDpJPEVZMyrHEzVGidwaB6clIKHTuKRNI6rbrFH1g+iaEUoZ3Eo8BIWsH/FOLW6rgDKHO0BVabDG+KoLX1ElHInvOAabt1OiN/pEUq2fqaCG2b11SHpinkLWqdBJkHWb4JqZEo35ilc9gAe+nfr9z+fvbRg7fl6onZnPHnjK4jCeJ0maFZS5r5DCbDIF9xa0ee2Ata+YXIwVH3PEHngHR/zo9uBt/N4Ur2Knu72Tsz7hLTH/NEssDskSnsbBe+JvTgjjd5+1O5vULb/ecUGjRK1wq3/ZMEx42+ZpyL8s+HwWQchmaR6ns5wm81m4oBFjMcuj4ySglX4EFSjQKH/mVdKBzYZpb71B/uFNH/PhHmoNPlwLkFy/Id9gQiiRooGsl/OFEX1ycuWT4/vp09wYHYXd54A8+d+8pm7+AAWx0ZaoCQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=147a3a1cc31b0750aaf4921ed40131aa"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=e34aae18c3970750aaf4921ed4013149"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=e34aae18c3970750aaf4921ed4013149^sys_idNOT INd87a3a1cc31b0750aaf4921ed40131ab"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">37b33e5cc3d70750aaf4921ed40131b7</block>
+        <comment/>
+        <connected_to/>
+        <decision_table display_value="Facility Priority Assignment">61626218c3570750aaf4921ed401318e</decision_table>
+        <display_text/>
+        <flow display_value="Assign Facility Ticket Priority">e34aae18c3970750aaf4921ed4013149</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Make a decision">578e90270b2313009002cab937673a7d</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-09 10:49:25</sys_created_on>
+        <sys_id>d87a3a1cc31b0750aaf4921ed40131ab</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-09 10:49:25</sys_updated_on>
+        <ui_id>b40d78d5-1e0c-4b24-ba35-08a1cc2cb193</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VYWXPbNhD+KyyfbZmHREl+6bhy3GYmjVM7cR/ahAOCoIUJRCgAaFnR6L93QfCAdViWK2eSyZPEBXaxx7cHsHB5oaaFku/5mZT0NndP//l45NJc0+D/ws3RhLinbkowlZTnMUMJYe6Re4dYoRfeCcoFVXOn3uEolDACO1IqpwzNb3ZuxGPKUkGqs6dIwJGKCPd0sbJEU5ATpBEKMOp7SRD6oecNPQ8+k2HYj/ohyjIQaHQ8dc/rk95USm8zRs2nmi6VoPlt9f2mEnJdE7lItVK9I5fcK5KnBLTJEJPkyJ2gPEWKi3lDEQSllzlrCWOaK5Dm6s33kn6F84JeT2/MCBiIiVlsPuPKfYacnSOFQJMCq0JUW/GYU0ykcU1KMlQwNbJpZsPlVIGphsV43HBzVkzyt8YhbiOgjhZQCglKkKm2VKte2ZFdj/nsqtbygualU6pFxjFizRdS4LqkUFqfhUsYmYCgeIKmU3BoPBX8jpbMoMukc8vgo5MxPoNDNRI7CGvFO+BY1LkA+nlJvkGCaiv+BDHAvDxy5VyOGJKytQWcGH8ptCbGssqG2LhBs2BBp+oMDrgjlbrLo3Ws1wCtsR75URAF/gCHvb7X73kIZd1h4JO06/mhP9gA+guEKdOgb9Bv0kx7Ym/koyHyEhwkm5GPo03If1+ZsM20CvktCh+C/8qiV/j3vccTAED6RPyHwUP4QyDjWsEtqbBm1w+ZGNk1QQKPLyhhOq5lbL5NukAU74gQwBsXQgf4JOezk9rpRhIRJ2M+Ib8agf8WnhemNJdEaMSiNI1pHudkFs/ARD4DGTrisERSqratSfBNDLwrFFn6YYUoCEOKpDGjUtVLu9IclalsdNUMnzSWsN4ea+/+YlZsgMEfptCnV389p0KQe4ILZWBaF4eMCqnDpcCg9TqgF63ON0bKKbdCsPctAwMcReEAZZvLQGg3wFeWnhtUr5LfpMNK5o9qYp32h+t7Xe8wbW/R2Pm4ezdHqLLL02Gt5VwVuYMYayRJS5QlSBR5DNss5yw3VZqD6OcfQr9guV71wr3K3gq6zeL5PiD/accJlMsZEWvDxINiNAFvUqh8En7Xq8djW/erHV2cpEk27MIEMwigdgSDrp9EYeIHaYhIYo8QZ6XaqwPEijFVBSk/46qP2VWk5HbemoVmgNgxQayVEjNSbKgkgwNVku90Tvg2E8Ed4EqHD1p3pjFSHv4imTBGMk4EylfqnreOeKPDvujuZ0HWy4Z+P/QCz/M9nGQED9Mg7GYR6g8TC90fJHF+a1XZrGCF7oRzRlC+Cm0A5clFpeezof3yXfIFsO1vbQHVHHdY5L8EFGmOWQFTMFdjImZUkpfAY9iNktBDoQcldn1S6xELj6+NPs6lpc8jqu6NzODnQOaPUnUPB+mPGrdGduNTMymUvfd1+5JXQjIZJgGJtj5hpC3siphKWZAYw2XsVkOkTZDFYgQ4gTuaw4XzYZqW1zW/gwsB3lWdh3zL5Xo67S9gV6o9wa4m1bR0Z9Satd3gvS5IuzLs6Q8jh78gHR87b3lOnONjK4xbLkF/g/3Cgbry2do708S4Im66mrzjelrkhUK3di2danLckJv7iMV5jTKi5s4YfUUitQfkkh439Io3tHn/uDkbORmiTFvfso7vEI5bcsXZtTlHXAKeKLa4cEuq33ptjt9JTgRizomTc+XIhyfemsWWNdpxJdwREf9ZEQmeHZHwf0Sk++yI9PaOSPT8iPQ3XIJ9q7vcx4EX9MKwC3pqXc3LLdy0vhREqtXes1Yrvo9O9PCB13Shc7shvGQjSudQSilueg6QZlx81t2xpS3/Ay3zv610GgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=e34aae18c3970750aaf4921ed4013149^sys_idNOT IN925deedcc3970750aaf4921ed4013188,e87a3a1cc31b0750aaf4921ed40131ec"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>e34aae18c3970750aaf4921ed4013149</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.current.issue_category}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-09 09:52:13</sys_created_on>
+        <sys_id>925deedcc3970750aaf4921ed4013188</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-09 09:52:13</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>feac06b3-4a20-453c-a754-7b931e44bfea</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>e34aae18c3970750aaf4921ed4013149</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.current}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-09 10:49:26</sys_created_on>
+        <sys_id>e87a3a1cc31b0750aaf4921ed40131ec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-09 10:49:26</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>cb189bc7-daec-4de6-9d54-354fdb7a0189</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=e34aae18c3970750aaf4921ed4013149"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e34aae18c3970750aaf4921ed4013149</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-09 09:38:55</sys_created_on>
+        <sys_id>774aae18c3970750aaf4921ed4013168</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Facilities Maintenance" source="x_2025334_fac">009dc1c8c39b4350aaf4921ed4013110</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-09 09:38:55</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e34aae18c3970750aaf4921ed4013149</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-09 09:38:56</sys_created_on>
+        <sys_id>fb4aae18c3970750aaf4921ed4013180</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Facilities Maintenance" source="x_2025334_fac">009dc1c8c39b4350aaf4921ed4013110</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-09 09:38:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e34aae18c3970750aaf4921ed4013149</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-09 09:38:55</sys_created_on>
+        <sys_id>ff4aae18c3970750aaf4921ed401315b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Facilities Maintenance" source="x_2025334_fac">009dc1c8c39b4350aaf4921ed4013110</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-09 09:38:55</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_e34aae18c3970750aaf4921ed4013149"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_e34aae18c3970750aaf4921ed4013149"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>ec84ea1cc3570750aaf4921ed40131d7</sys_id>
+        <latest_snapshot>e34aae18c3970750aaf4921ed4013149</latest_snapshot>
+        <compiler_build>glide-australia-02-11-2026__patch3-05-25-2026_06-12-2026_1106.zip</compiler_build>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=ec84ea1cc3570750aaf4921ed40131d7^sys_idNOT IN405aae18c3970750aaf4921ed40131d2"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.Every</binding_strategy>
+        <plan>{"@class":"com.snc.process_flow.engine.serialization.plan_data.ChunkingPlanData","chunk_data":{"table":"sys_flow_trigger_plan","id":"405aae18c3970750aaf4921ed40131d2","name":"plan","plan_signature":null},"plan_data":"CHUNKING_PLAN"}</plan>
+        <plan_id>ec84ea1cc3570750aaf4921ed40131d7</plan_id>
+        <snapshot>988a3e1cc31b0750aaf4921ed40131b8</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-09 09:38:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>405aae18c3970750aaf4921ed40131d2</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-09 10:49:26</sys_updated_on>
+        <trigger display_value="">e47a7a1cc31b0750aaf4921ed4013145</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=ec84ea1cc3570750aaf4921ed40131d7"/>
+</record_update>

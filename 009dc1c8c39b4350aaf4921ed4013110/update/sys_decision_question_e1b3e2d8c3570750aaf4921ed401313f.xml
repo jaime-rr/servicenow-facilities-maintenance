@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision_question">
+    <sys_decision_question action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <answer>9db3aa98c3570750aaf4921ed40131d3</answer>
+        <condition table="var__m_sys_decision_input_61626218c3570750aaf4921ed401318e">u_issue_category=safety_hazard^EQ<item display_value="Safety hazard" endquery="false" field="u_issue_category" goto="false" newquery="false" operator="=" or="false" value="safety_hazard"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <decision_table display_value="Facility Priority Assignment">61626218c3570750aaf4921ed401318e</decision_table>
+        <default_answer>false</default_answer>
+        <input_table>var__m_sys_decision_input_61626218c3570750aaf4921ed401318e</input_table>
+        <label>Facility Priority Assignment_300</label>
+        <marked_for_deletion>false</marked_for_deletion>
+        <order>300</order>
+        <sys_class_name>sys_decision_question</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-09 09:10:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e1b3e2d8c3570750aaf4921ed401313f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Facility Priority Assignment_300</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Facilities Maintenance" source="x_2025334_fac">009dc1c8c39b4350aaf4921ed4013110</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_update_name>sys_decision_question_e1b3e2d8c3570750aaf4921ed401313f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-09 09:10:07</sys_updated_on>
+    </sys_decision_question>
+</record_update>
