@@ -12,10 +12,21 @@
 
 ---
 
+## Who uses it
+
+| Persona | Access |
+|---|---|
+| **Employee** | Reports repairs from the portal — sees only their own requests |
+| **Agent** | Manages all requests — assigns, updates, closes |
+| **Manager** | Reads everything — no changes |
+
+---
+
 ## What's built so far
 
 - **Facility Request table** — extends Task, reusing the platform's built-in request features: assignment, work notes, activity, priority, state
 - **Portal intake** — employees report repairs from Service Portal and Employee Center, describing the problem and choosing the building
+- **Security** — employees see only their own requests, agents manage all, managers read-only
 
 ## Design decisions
 
