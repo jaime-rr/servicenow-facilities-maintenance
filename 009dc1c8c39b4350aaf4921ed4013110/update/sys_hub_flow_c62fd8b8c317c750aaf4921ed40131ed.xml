@@ -1,0 +1,1380 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=17454000,viewActivatedIn=diagramming</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>facility_cost_approval</internal_name>
+        <label_cache>[{"name":"034cd6e8-1b28-49bb-b9a1-b5df1323a6f6.Count","label":"3 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","usedInstances":{"35e1d258-921f-4b28-8d00-788bb5600f14":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Updated_1.current.priority","label":"Trigger - Record Updated➛Facility Request Record➛Priority","reference":"","reference_display":"Priority","type":"choice","base_type":"choice","parent_table_name":"x_2025334_fac_facility_request","column_name":"priority","choices":[{"label":"-- None --","sequence":-1.0,"selected":false,"used":false,"image":"","reference":false,"rawLabel":"-- None --","missing":false,"value":""},{"parameters":{"name":"task","dependent_values":[""],"dependent_values_map":{"":"1 - Critical"}},"label":"1 - Critical","sequence":1.0,"selected":false,"used":false,"image":"","reference":false,"rawLabel":"1 - Critical","missing":false,"value":"1"},{"parameters":{"name":"task","dependent_values":[""],"dependent_values_map":{"":"2 - High"}},"label":"2 - High","sequence":2.0,"selected":false,"used":false,"image":"","reference":false,"rawLabel":"2 - High","missing":false,"value":"2"},{"parameters":{"name":"task","dependent_values":[""],"dependent_values_map":{"":"3 - Moderate"}},"label":"3 - Moderate","sequence":3.0,"selected":false,"used":false,"image":"","reference":false,"rawLabel":"3 - Moderate","missing":false,"value":"3"},{"parameters":{"name":"task","dependent_values":[""],"dependent_values_map":{"":"4 - Low"}},"label":"4 - Low","sequence":4.0,"selected":false,"used":false,"image":"","reference":false,"rawLabel":"4 - Low","missing":false,"value":"4"},{"parameters":{"name":"task","dependent_values":[""],"dependent_values_map":{"":"5 - Planning"}},"label":"5 - Planning","sequence":5.0,"selected":false,"used":false,"image":"","reference":false,"rawLabel":"5 - Planning","missing":false,"value":"5"}],"usedInstances":{"6d5d80be-26fe-462c-8d38-cf35c0a6849e":["condition"],"02b9f139-b76c-42e8-8c23-069c383b5e7b":["condition"]}},{"name":"Updated_1.current","label":"Trigger - Record Updated➛Facility Request Record","reference":"x_2025334_fac_facility_request","reference_display":"Facility Request","type":"reference","base_type":"reference","usedInstances":{"034cd6e8-1b28-49bb-b9a1-b5df1323a6f6":["conditions"],"cf8f9d08-8bee-40eb-8491-30e04300fa07":["record"],"1b2f9aef-ac25-4240-b47d-6c62c1744bef":["record"]},"attributes":{}},{"name":"Updated_1.current.estimated_cost","label":"Trigger - Record Updated➛Facility Request Record➛Estimated cost","reference":"","reference_display":"Estimated cost","type":"currency","base_type":"currency","parent_table_name":"x_2025334_fac_facility_request","column_name":"estimated_cost","usedInstances":{"e781f31d-2b76-4f84-a58b-da785d2bcd2f":["condition"],"2138638c-8363-4de9-82d1-bb42daf383cf":["condition"],"5400e8ad-e35a-4577-bf80-ab48eec008df":["condition"]}},{"name":"cf8f9d08-8bee-40eb-8491-30e04300fa07.approval_state","label":"5 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"f7192ea9-5294-406a-ad52-c7fb8d0d9d60":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"{{static.9c1cd4fcc3d3c750aaf4921ed4013184}}","label":"Facilities Managers","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","usedInstances":{"cf8f9d08-8bee-40eb-8491-30e04300fa07":["approval_conditions"]}}]</label_cache>
+        <master_snapshot>61318db0c35bc750aaf4921ed40131d5</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Facility Ticket Cost Approval</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>77b1edb8c35fc750aaf4921ed40131fe</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-10 12:47:55</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c62fd8b8c317c750aaf4921ed40131ed</sys_id>
+        <sys_mod_count>80</sys_mod_count>
+        <sys_name>Facility Ticket Cost Approval</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Facilities Maintenance" source="x_2025334_fac">009dc1c8c39b4350aaf4921ed4013110</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_update_name>sys_hub_flow_c62fd8b8c317c750aaf4921ed40131ed</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-10 17:38:56</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record>d0c121f8c35fc750aaf4921ed4013171</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=c62fd8b8c317c750aaf4921ed40131ed"/>
+    <sys_variable_value action="delete_multiple" query="document_key=c62fd8b8c317c750aaf4921ed40131ed"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_2025334_fac_facility_request">estimated_costVALCHANGES^emergency_approved!=true^stateNOT IN3,4,7<item endquery="false" field="estimated_cost" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item endquery="false" field="emergency_approved" goto="false" newquery="false" operator="!=" or="false" value="true"/>
+            <item display_value="3,4,7" endquery="false" field="state" goto="false" newquery="false" operator="NOT IN" or="false" value="3,4,7"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>false</on_insert>
+        <on_update>true</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-10 17:38:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>77b1edb8c35fc750aaf4921ed40131fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-10 17:38:52</sys_updated_on>
+        <table>x_2025334_fac_facility_request</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>c62fd8b8c317c750aaf4921ed40131ed</identifier>
+        <identifier_type>flow</identifier_type>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-10 17:38:52</sys_created_on>
+        <sys_id>73b1edb8c35fc750aaf4921ed40131ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-10 17:38:52</sys_updated_on>
+        <trigger display_value="">77b1edb8c35fc750aaf4921ed40131fe</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=c62fd8b8c317c750aaf4921ed40131ed^sys_idNOT IN73b1edb8c35fc750aaf4921ed40131ff"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=c62fd8b8c317c750aaf4921ed40131ed"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=c62fd8b8c317c750aaf4921ed40131ed^sys_idNOT IN0e2f903cc317c750aaf4921ed401313b"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>c62fd8b8c317c750aaf4921ed40131ed</id>
+        <name>Facility Cost Approval</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-10 12:47:55</sys_created_on>
+        <sys_id>0e2f903cc317c750aaf4921ed401313b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-10 12:47:55</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=0e2f903cc317c750aaf4921ed401313b"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=c62fd8b8c317c750aaf4921ed40131ed^sys_idNOT IN784fd43cc317c750aaf4921ed4013137,854fd43cc317c750aaf4921ed401316f,c54fd43cc317c750aaf4921ed40131a0"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Facility Ticket Cost Approval">c62fd8b8c317c750aaf4921ed40131ed</model>
+        <model_id>c62fd8b8c317c750aaf4921ed40131ed</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_c62fd8b8c317c750aaf4921ed40131ed</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-10 12:48:24</sys_created_on>
+        <sys_id>784fd43cc317c750aaf4921ed4013137</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-10 13:15:13</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=784fd43cc317c750aaf4921ed4013137"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Facility Ticket Cost Approval">c62fd8b8c317c750aaf4921ed40131ed</model>
+        <model_id>c62fd8b8c317c750aaf4921ed40131ed</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_c62fd8b8c317c750aaf4921ed40131ed</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-10 12:48:24</sys_created_on>
+        <sys_id>854fd43cc317c750aaf4921ed401316f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-10 13:15:13</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=854fd43cc317c750aaf4921ed401316f"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Facility Ticket Cost Approval">c62fd8b8c317c750aaf4921ed40131ed</model>
+        <model_id>c62fd8b8c317c750aaf4921ed40131ed</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_c62fd8b8c317c750aaf4921ed40131ed</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-10 12:48:24</sys_created_on>
+        <sys_id>c54fd43cc317c750aaf4921ed40131a0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-10 12:48:24</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c54fd43cc317c750aaf4921ed40131a0"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=c62fd8b8c317c750aaf4921ed40131ed"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c62fd8b8c317c750aaf4921ed40131ed"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=c62fd8b8c317c750aaf4921ed40131ed^sys_idNOT IN744f543cc317c750aaf4921ed4013194"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment>Estimated costs changes and is not emergency  approved already.</comment>
+        <display_text/>
+        <flow display_value="Facility Ticket Cost Approval">c62fd8b8c317c750aaf4921ed40131ed</flow>
+        <generation_source/>
+        <name>Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-10 12:48:23</sys_created_on>
+        <sys_id>744f543cc317c750aaf4921ed4013194</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-10 14:57:54</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=c62fd8b8c317c750aaf4921ed40131ed^sys_idNOT IN34fcb8f4c31bc750aaf4921ed40131f5,9dd001b0c35bc750aaf4921ed40131ba,d3da7874c31bc750aaf4921ed4013119"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Facility Ticket Cost Approval">c62fd8b8c317c750aaf4921ed40131ed</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>35e1d258-921f-4b28-8d00-788bb5600f14</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-10 14:58:06</sys_created_on>
+        <sys_id>34fcb8f4c31bc750aaf4921ed40131f5</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-10 17:38:09</sys_updated_on>
+        <ui_id>cf8f9d08-8bee-40eb-8491-30e04300fa07</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Y227bOBD9FUPPjpe6WvZbsIEXXexugSTtSxwINDmKuaApVaLSeA3/+w4lylbsxDVcF2mLPiQAh3M5M3OGIn23cgR3xs4wTj0YjTwycwnxCYlDRmIfZv4wGvqUEafvKLoA1CyAZQXH9SOVlRGsVh9yTjXwxB2wqihA6fUa97koc0mXH60aSthcSI77zvjuvu/ktECPGgpnvNrZ0sscEklnINHwKmPVAp323l2hj2PRttbXLdxd+CYGrrn1nggjxC2Dh/QdeNKgOGC0lMoS+s6CKswyK5bOWBcVCgqg/L2Sy43GXCjdJLqgT6X4D937ntFLATNjtgibZWIL1NYmEwze51pkqpFoOpNt4TJZLdQ/TQamtJDSSupOaasS/UFuIBsQDcL0Zp59vm7jTYSqk7NoZcao3Kyo1oWYVRpK0w2QUNdkQfNcqIckL7JHURsjlMXgQeJikMrsM8YsxYMaUGZwD7BAdDBB+VUt/kgLYZL4G92g8bpOPvlUmbhNGhZwUufcJIxaJStEri/R5yNYhOu+JeqMHWw923a6cbfl6VPiES/0/SBJKTN/Qgq9TAr4VEGp9wk7sRq9643GaQS+NUB6dff6RyfxzHg/KcveepmoxrUlr3uYvFZyDHtj8jbstYh+MPp+ibkQRH6I/4apT1zPJTFEccxGhLI4isLA3zYZ4yFiKpGbtETfWw7/npW6R2fZI/TckOxzdm//NMbeYDXVQ8vWI4C3hpcWOc6MRf5qSpbBZRvKstc7G3vd6AelbyVud2rTSP7a7c634bkJ90EJPPPeme5H3iwakZhf8JTMLoLYDy8oA3IBkRtCyCMWuv5XzwZxDx2IPH6BSKkA2b2GtBv7Q9HZOW0cJibUswP8CLx7IzGxgF9LxA5Evdw50s83FDEhbzQVP++VhB0kA3QO9n+zqlAHuJvMRVm39FUOdzTOxeUj4LfGfzb4d6m8m9YBJvu/mPwdMzkID1IBXji9WKa4MPjKDp+bMw/KS7X84261KjXVgg1GzGU8SBnzuc+GIaE0DUaeCzwgru/GwXp9v0/8r3F12oRs7zCVhLKdkiNKs3lyWruDpbIzsr0XWSM7J8G5XqBvNyY/5y2eHeRBOtr2nVdYDqq7T9DV1GlATp3x1FGZgqnTnzpGKzGEqMWogeA2G7VstW7WVUGtudtZbm05XZa1ZsnmwJFStfSZpOG5lZ/zd5obG6B3hah/uxWdL8yXa7b5sadq7F8sY/tkaDNp6ia635fwbN+X4NfY7DwKks1FGj8neACdPEv3/wMwFt9fdhQAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=34fcb8f4c31bc750aaf4921ed40131f5"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment>Close Incomplete + Work notes</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Facility Ticket Cost Approval">c62fd8b8c317c750aaf4921ed40131ed</flow>
+        <generation_source/>
+        <order>7</order>
+        <parent_ui_id>f7192ea9-5294-406a-ad52-c7fb8d0d9d60</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-10 15:15:04</sys_created_on>
+        <sys_id>9dd001b0c35bc750aaf4921ed40131ba</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-10 17:38:09</sys_updated_on>
+        <ui_id>1b2f9aef-ac25-4240-b47d-6c62c1744bef</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1U32vbMBD+V4yfjbHjJLR5Gw2BPayFbOtL1wlZOifaZMmV5fxYyP++ky2nabt1IRTGYAY/3On03fedPu5uFwoeTsIh8CS9TMcsS7NskCSDi2Gaj7M8HfCMAqRhFCpaAlYaYNpwjFdUNi6x232uOLXASRqzxhhQdr/Hcy7qStLtrS/DDFsKyfE8nNzdR2FFDSJaMOFk9+zIbisgkuYg8eJUs6ZE0OD9FDFOZdvfnvd0n9N3PTDmHp0Il8QjxydNohA2FhQHbFdQWUMUllShTG224cSaBhMGKL9RcnuoWAplO6Ul3dTiB+IPE1dXAEpjfgqHkPgJ9cPRgsFNZYVWXcbSXPaT07Ip1XUnwc0WCtpIezTbpkY8qBxlR6JjWHxc6vW87zcTqlXn2UrNqDxE1Foj8sZC7Z4DJLRDKWlVCbUgldEr0V5GKmW8kBjEhdRr7FmLhYopc7xjHBCNZ5iftulbaoQT8QFh8PK+FU8eGte3k+EJk1ZzK5i0D4WlNTOisu8QeAWe5j7yds1HrxmAXT6+9xHmo2U3ZJAMRlk2JAVl7hdS2C0x8NBAbV96d+Yrgvmh4jwvf3JsguuOzalKnlz+jTLv5ic5b+bRm5n54i+Z2TP6x9z8Jw8ng1eX2NFLt7atj/xbW9y3X5okyfjw61qb70Rp1NplrnRtA6SIIqkMDHwDhsv5panPAznT91BiawtB1zw6eQI9wEyA5PUvRtIb3zcgK9/gsMnfzP3pOGm//wv9DRf6/U9grQ27gQgAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9dd001b0c35bc750aaf4921ed40131ba"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment>See if an approval already exists</comment>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Facility Ticket Cost Approval">c62fd8b8c317c750aaf4921ed40131ed</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-10 14:48:59</sys_created_on>
+        <sys_id>d3da7874c31bc750aaf4921ed4013119</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-10 17:38:09</sys_updated_on>
+        <ui_id>034cd6e8-1b28-49bb-b9a1-b5df1323a6f6</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VXS0/jMBD+K1XOUZWQUlhuCIS0B0AClgvLWk7stNa6TrAdSqn633cc22n6AErp7sKt9ry+mflm4t5NA0aCo+Aw70URjvcPD6IoSaKo308yHKdp0s/SKO2lQRgIPKKgqXHKKRwfMa/MWU0ULktZwBnZH1SCmDBVcjy5dVrHTgUk2ZBxIqkIju7uw6DEEvxqsDmaLon0pKSI45RycHBjwnYuDIZwY8gLxqspmAD+iIR1XUhisERhQJ80FYRCqBxzRcNghAXBupCT5kZSTC4Fn18MmdDgMTDKT4o9g/vDyOjlFNLKqJU1R+SqZK+zYcEyellqVgh7Y4FaYcGrkbiwCZj60hxXXPv6wk2lwB8tDWYDwiHKr4fF+MoHPGOiTs8JeZFBS/wJay1ZWmmqTC8opyNwhEbQVCYGyPSP1caAZdQdcDh0c16MIahiA9HFmQHehRLh7hncn9bXt1gyk8U5uKmJkTMO3Ua26KqoZF2VR5TxStUCiYWyvoJZXSv0UBmUNmuXH7IlAgWVSVbqYzB4pC6VWbgRq/ejOSWyQhBmYqo2tTXW9GcFtkDKh4oCPvKrxXcrmk5/lJA0JSjuZpWEOuvZbHUCPuZsu6E5aWe1aUXWGq8rkxufhTs3PvHOxgfg/qcB0rL6fPPz1kTYhN8Yi+zgVRLsz/utCqmRrVxrLlbJvTVDzxjlZGGtbwDOG18asnXSyUt4HUFzE2Npv+99+f3+KekJgAiy9WaCM1F/XgHobngbvb68vi3xoG5/a5ubO6yyVfbiji46z9tv2bqvnr8bgPSG14Coc2NRrgHu96t376ib7Iy6yd77qAvEuZs26JuqrSmwf0WZ1nn9Z6OPl/WBXS2DeHbfUP9ku5jxe2PumZhLs5m8azjbzLKS0xcItuM32gvDFv7N6R6CqYuH7LCiMSMDqufRvRYp9Bjz3+vkjl3NDNXpffi913t19vrxfM5gBpCkClrVfvDF8NhYXQ9xaK+32w7fhaaDunibQvSW5/ipc9VgXAvcrQjWxHCc7u3w/fUvPm++8Gunx9f/S/zB2ZbC938AmYsYNooPAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d3da7874c31bc750aaf4921ed4013119"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=c62fd8b8c317c750aaf4921ed40131ed"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=c62fd8b8c317c750aaf4921ed40131ed^sys_idNOT IN386574b8c3d7c750aaf4921ed40131de,42ec7c78c31bc750aaf4921ed40131dc,5a45f0b8c3d7c750aaf4921ed4013121,768c3078c31bc750aaf4921ed40131e0,bdcc3878c31bc750aaf4921ed401317c,d97f34fcc31bc750aaf4921ed40131ea"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">bc6574b8c3d7c750aaf4921ed40131dd</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Facility Ticket Cost Approval">c62fd8b8c317c750aaf4921ed40131ed</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id>2138638c-8363-4de9-82d1-bb42daf383cf</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-10 14:25:03</sys_created_on>
+        <sys_id>386574b8c3d7c750aaf4921ed40131de</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-10 17:38:49</sys_updated_on>
+        <ui_id>51d0e3f5-372a-4600-9e65-659e1e177b5c</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">c6ec7c78c31bc750aaf4921ed40131db</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Facility Ticket Cost Approval">c62fd8b8c317c750aaf4921ed40131ed</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <parent_ui_id>e778c233-3778-40e6-8be6-9be5a8e3cf59</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-10 14:57:54</sys_created_on>
+        <sys_id>42ec7c78c31bc750aaf4921ed40131dc</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-10 17:38:49</sys_updated_on>
+        <ui_id>9fcf9a8d-ee95-40c0-959f-2f3b7c4a095e</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">de45f0b8c3d7c750aaf4921ed4013120</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Facility Ticket Cost Approval">c62fd8b8c317c750aaf4921ed40131ed</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-10 14:24:37</sys_created_on>
+        <sys_id>5a45f0b8c3d7c750aaf4921ed4013121</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-10 17:38:49</sys_updated_on>
+        <ui_id>2138638c-8363-4de9-82d1-bb42daf383cf</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Uy47TMBT9lcrrKkqaScV0NwJGQgJGYobZwChy7JvWwrGNH+2Uqh/Af/BlfAnXTtKpmPIQsGQTxcf3cc69R94RHbwJ3t3oC+fEUpHFu7spESpi+L8jinZAFoRpxYUXWpEpWVMZIrbbvTWceuB1kbFgLSifgfOiSxjTzu/370Oelyx9eVHlmM2FM5Jub/+qCFsJyTG2p2uoRZYeLFnsvrvyWwO1pA1I7HXtrVBLTBccT+e0aqsir1g5m5ezPJ89OSuaedkUM15SOJtj3Jj49Ej9iYHEJgi5sby2PHKZ5VMC9x4UB+zXUulgSjqqUK62W7LwNiBggfIrJbeHiJVQHquRGHvvxCeIlfI8RraAwhj0t4djPYy0h9lKCwZXJnFLiKeNHHKYlqFTr3sJcRnQ0iD9uAxEgsN6YCLpSGPg1F6v9ObN2PBSqCRwuJSaUXk4UY9jaIIHF7cBEjosVHfUGBxObaxei5SMXLpsKfGQtVJvsGn0X0ZZJJ7hjGh2ifizBN9SK6KKV1gGk3GDrnbMCjNqS83JPk2l/hgin17foKTuh4EBfdoFtlnDQHo/fezzOgEPZn8+enISPTkRbvL185eTjv5J5L+wbZvTtjhnxWnb0vKUbScvE/LYvKPKHzi4+IWDB+S3LFxV/x187OBIs6FOsDq9tlguvgd/bOG7aNW+hes9xIEJh0xuIvZifNHjxRa3LtgxtNH2Q9TwgO2/ASZlYzMbBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">caec7c78c31bc750aaf4921ed40131bc</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Facility Ticket Cost Approval">c62fd8b8c317c750aaf4921ed40131ed</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-10 14:56:19</sys_created_on>
+        <sys_id>768c3078c31bc750aaf4921ed40131e0</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-10 17:38:49</sys_updated_on>
+        <ui_id>35e1d258-921f-4b28-8d00-788bb5600f14</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1UXWvbMBT9K8bPTpDtJCR9Ky2FwbbCWvqyFXMtXSdiiuRKctIs5L/vyh9pWFO2lT3uzTr365x7D97HpvF14929uXROLnV88fUxiaUOGH3vYw1rjC9ibrSQXhpdtEASb0A1IXBt0EXa+GgFG4xAR1DX1lA0svjUoPOUK6SrFewe/qKEr6QSFns+NVia6tHGF/tfQn5XY6GgREWd77yVeknlUtCrYlClC57yPJvlGWPZfJKWs7xMM5EDQk55Q+HVIC/62CLJm7rDPMLdMMlYEWilLInx2aMWSKMrUA6TeA1agDd2d0QsgrjV6gVYSe2pXRySn538Qb2z6TQkVkgaOXbB47Pod9nBfGUkx9s6EOwQD6Xqa7hRzVp/7nSEK2AFjfLDFQhpHPXDOpAOLHpK1d3KbL8MA2+kbgX2QWU4qOMLPK2hbDy6cBhUuKZGxZruScspwlFlW0xc1uOlose4UmZLQ4PXxsAD8THtCMY3hF+38ANYGVR8ojZU3NEswUletL6kdt6ShEO7luKpCYQ6gb2UotsGJThuZe0vac4Ge9aH5LWpT/y837N8wsUM56O0zOajyaIsR+UC0lE5FVWaZznMqtn4yjTaHw7fGsZywV57/L1t/oXvFzCtpimbnvf9ZHbO92cc/7bZs9+YPZznD73OGPtv9lOzS1d0pu21tcPf7fXHYOxugut8I5BLR0TuA/Zh+M+HwI4MIPkptDX2e5Dwgh1+AiORlzIxBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">82ec7c78c31bc750aaf4921ed40131da</block>
+        <comment/>
+        <connected_to>35e1d258-921f-4b28-8d00-788bb5600f14</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Facility Ticket Cost Approval">c62fd8b8c317c750aaf4921ed40131ed</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-10 14:57:20</sys_created_on>
+        <sys_id>bdcc3878c31bc750aaf4921ed401317c</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-10 17:38:49</sys_updated_on>
+        <ui_id>e778c233-3778-40e6-8be6-9be5a8e3cf59</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">11318db0c35bc750aaf4921ed4013178</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Facility Ticket Cost Approval">c62fd8b8c317c750aaf4921ed40131ed</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id>35e1d258-921f-4b28-8d00-788bb5600f14</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-10 15:09:03</sys_created_on>
+        <sys_id>d97f34fcc31bc750aaf4921ed40131ea</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-10 17:38:49</sys_updated_on>
+        <ui_id>f7192ea9-5294-406a-ad52-c7fb8d0d9d60</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1UTW/aQBD9K8hnY61tIMAtahUpUttITZRLG1nj3TFsu/a6u2sIRfz3zvqDoBaUqsqxN/bN13vjN+wD3bi6cfZBX1srV1Ww/PIUBrLyGP3eBxWUGCwDrishndRV1gJhsAHV+MCtG63QfW0YS67syOA35A4FJQhpawW7x9fy+FoqYbCfXIOh/g5NsNz/FnK7GjMFOSpqd++MrFZULgW9CgZFvOAxT5NZmtCI+STOZ2keJyIFhJTyhsJ3g5DRhxYJLyr08wi3wyRthKcVszDAZ4eVIPrLApTFMCihEuC02R0RgyDuKvUCrGXlqF3gk5+t/Em9k+nUJxZIGjl2weMz6xfYwXytJce72hPsEAe56mu4Vk1Zfep0+NVjAY1yw+oJaSz1w9qT9ix6SsX9Wm8/DwNvZNUK7INKc1DHFzhaQ944tP7DoMKSGmUl1DUtJ6uN3si2mLiU0UrRIyqU3tJQ76oIuCce0Y4guiH8fQs/gpFexUdqQ8UdzRys5FnrQGrnDEk4tGvJfjSeUCewl5J126AEy42s3TXN2WDP+hD+ad8T5+73vJgXC8Hm43mOOJ4wzMfzySIepwzZJGWsAHYVETdSByqzDhweDt7Cqbhs9Ldq+xZ3sYBpMY3Z9PxdTGbn7uLMRVw+huSVY/Cf7y9vgTH2/xhOj0HarDN1r60d/s+38OSN302wnW8EcmmJyIPHbod/fB/YkQEkP4W22nz3El6wwy/fbCWdOwYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=c62fd8b8c317c750aaf4921ed40131ed"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=c62fd8b8c317c750aaf4921ed40131ed"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_c62fd8b8c317c750aaf4921ed40131ed</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-10 12:48:24</sys_created_on>
+        <sys_id>8d4fd43cc317c750aaf4921ed4013169</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Facilities Maintenance" source="x_2025334_fac">009dc1c8c39b4350aaf4921ed4013110</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-10 12:48:24</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_c62fd8b8c317c750aaf4921ed40131ed</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-10 12:48:24</sys_created_on>
+        <sys_id>c54fd43cc317c750aaf4921ed4013176</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Facilities Maintenance" source="x_2025334_fac">009dc1c8c39b4350aaf4921ed4013110</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-10 12:48:24</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_c62fd8b8c317c750aaf4921ed40131ed</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-10 12:48:24</sys_created_on>
+        <sys_id>c54fd43cc317c750aaf4921ed40131a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Facilities Maintenance" source="x_2025334_fac">009dc1c8c39b4350aaf4921ed4013110</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-10 12:48:24</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_c62fd8b8c317c750aaf4921ed40131ed"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_c62fd8b8c317c750aaf4921ed40131ed"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=diagramming</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>facility_cost_approval</internal_name>
+        <label_cache>[{"name":"034cd6e8-1b28-49bb-b9a1-b5df1323a6f6.Count","label":"3 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","usedInstances":{"35e1d258-921f-4b28-8d00-788bb5600f14":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Updated_1.current.priority","label":"Trigger - Record Updated➛Facility Request Record➛Priority","reference":"","reference_display":"Priority","type":"choice","base_type":"choice","parent_table_name":"x_2025334_fac_facility_request","column_name":"priority","choices":[{"label":"-- None --","sequence":-1.0,"selected":false,"used":false,"image":"","reference":false,"rawLabel":"-- None --","missing":false,"value":""},{"parameters":{"name":"task","dependent_values":[""],"dependent_values_map":{"":"1 - Critical"}},"label":"1 - Critical","sequence":1.0,"selected":false,"used":false,"image":"","reference":false,"rawLabel":"1 - Critical","missing":false,"value":"1"},{"parameters":{"name":"task","dependent_values":[""],"dependent_values_map":{"":"2 - High"}},"label":"2 - High","sequence":2.0,"selected":false,"used":false,"image":"","reference":false,"rawLabel":"2 - High","missing":false,"value":"2"},{"parameters":{"name":"task","dependent_values":[""],"dependent_values_map":{"":"3 - Moderate"}},"label":"3 - Moderate","sequence":3.0,"selected":false,"used":false,"image":"","reference":false,"rawLabel":"3 - Moderate","missing":false,"value":"3"},{"parameters":{"name":"task","dependent_values":[""],"dependent_values_map":{"":"4 - Low"}},"label":"4 - Low","sequence":4.0,"selected":false,"used":false,"image":"","reference":false,"rawLabel":"4 - Low","missing":false,"value":"4"},{"parameters":{"name":"task","dependent_values":[""],"dependent_values_map":{"":"5 - Planning"}},"label":"5 - Planning","sequence":5.0,"selected":false,"used":false,"image":"","reference":false,"rawLabel":"5 - Planning","missing":false,"value":"5"}],"usedInstances":{"6d5d80be-26fe-462c-8d38-cf35c0a6849e":["condition"],"02b9f139-b76c-42e8-8c23-069c383b5e7b":["condition"]}},{"name":"Updated_1.current","label":"Trigger - Record Updated➛Facility Request Record","reference":"x_2025334_fac_facility_request","reference_display":"Facility Request","type":"reference","base_type":"reference","usedInstances":{"034cd6e8-1b28-49bb-b9a1-b5df1323a6f6":["conditions"],"cf8f9d08-8bee-40eb-8491-30e04300fa07":["record"],"1b2f9aef-ac25-4240-b47d-6c62c1744bef":["record"]},"attributes":{}},{"name":"Updated_1.current.estimated_cost","label":"Trigger - Record Updated➛Facility Request Record➛Estimated cost","reference":"","reference_display":"Estimated cost","type":"currency","base_type":"currency","parent_table_name":"x_2025334_fac_facility_request","column_name":"estimated_cost","usedInstances":{"e781f31d-2b76-4f84-a58b-da785d2bcd2f":["condition"],"2138638c-8363-4de9-82d1-bb42daf383cf":["condition"],"5400e8ad-e35a-4577-bf80-ab48eec008df":["condition"]}},{"name":"cf8f9d08-8bee-40eb-8491-30e04300fa07.approval_state","label":"5 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"f7192ea9-5294-406a-ad52-c7fb8d0d9d60":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"{{static.9c1cd4fcc3d3c750aaf4921ed4013184}}","label":"Facilities Managers","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","usedInstances":{"cf8f9d08-8bee-40eb-8491-30e04300fa07":["approval_conditions"]}}]</label_cache>
+        <master>true</master>
+        <name>Facility Ticket Cost Approval</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Facility Ticket Cost Approval">c62fd8b8c317c750aaf4921ed40131ed</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-10 15:16:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>61318db0c35bc750aaf4921ed40131d5</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-10 17:38:51</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=61318db0c35bc750aaf4921ed40131d5"/>
+    <sys_variable_value action="delete_multiple" query="document_key=61318db0c35bc750aaf4921ed40131d5"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=61318db0c35bc750aaf4921ed40131d5"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=61318db0c35bc750aaf4921ed40131d5^sys_idNOT IN25318db0c35bc750aaf4921ed40131d6"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>61318db0c35bc750aaf4921ed40131d5</id>
+        <name>Facility Ticket Cost Approval</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-10 15:16:43</sys_created_on>
+        <sys_id>25318db0c35bc750aaf4921ed40131d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-10 15:16:43</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=25318db0c35bc750aaf4921ed40131d6"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=61318db0c35bc750aaf4921ed40131d5^sys_idNOT INa9318db0c35bc750aaf4921ed40131d7,a931cdb0c35bc750aaf4921ed4013112,e531cdb0c35bc750aaf4921ed401312b"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Facility Ticket Cost Approval">61318db0c35bc750aaf4921ed40131d5</model>
+        <model_id>61318db0c35bc750aaf4921ed40131d5</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_61318db0c35bc750aaf4921ed40131d5</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-10 15:16:43</sys_created_on>
+        <sys_id>a9318db0c35bc750aaf4921ed40131d7</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-10 17:38:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a9318db0c35bc750aaf4921ed40131d7"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Facility Ticket Cost Approval">61318db0c35bc750aaf4921ed40131d5</model>
+        <model_id>61318db0c35bc750aaf4921ed40131d5</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_61318db0c35bc750aaf4921ed40131d5</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-10 15:16:43</sys_created_on>
+        <sys_id>a931cdb0c35bc750aaf4921ed4013112</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-10 17:38:11</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a931cdb0c35bc750aaf4921ed4013112"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Facility Ticket Cost Approval">61318db0c35bc750aaf4921ed40131d5</model>
+        <model_id>61318db0c35bc750aaf4921ed40131d5</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_61318db0c35bc750aaf4921ed40131d5</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-10 15:16:43</sys_created_on>
+        <sys_id>e531cdb0c35bc750aaf4921ed401312b</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-10 17:38:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e531cdb0c35bc750aaf4921ed401312b"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=61318db0c35bc750aaf4921ed40131d5"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=61318db0c35bc750aaf4921ed40131d5"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=61318db0c35bc750aaf4921ed40131d5^sys_idNOT IN7d31cdb0c35bc750aaf4921ed401315a"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment>Estimated costs changes and is not emergency  approved already.</comment>
+        <display_text/>
+        <flow display_value="Facility Ticket Cost Approval">61318db0c35bc750aaf4921ed40131d5</flow>
+        <generation_source/>
+        <name>Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-10 15:16:44</sys_created_on>
+        <sys_id>7d31cdb0c35bc750aaf4921ed401315a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-10 15:16:44</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=61318db0c35bc750aaf4921ed40131d5^sys_idNOT IN7931cdb0c35bc750aaf4921ed4013155,7931cdb0c35bc750aaf4921ed4013158,f131cdb0c35bc750aaf4921ed4013157"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment>See if an approval already exists</comment>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Facility Ticket Cost Approval">61318db0c35bc750aaf4921ed40131d5</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-10 15:16:44</sys_created_on>
+        <sys_id>7931cdb0c35bc750aaf4921ed4013155</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-10 15:16:44</sys_updated_on>
+        <ui_id>034cd6e8-1b28-49bb-b9a1-b5df1323a6f6</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VXXU/bMBT9K1WeoyqhpTDeEAhpEh8SMF4Ysxzbaa25TrAdoFT977uO7TRqA2u1IoH2Vt8P+9x7z3Hc+3nEaXQUHebDJMHp/uFBkgwGSTIaDQhOs2wwIlmSDbMojiSeMog0OBMMlk9YVHatZxqXpSpgjdwPpsBNuS4Fnt35qGMfAh4y4YIqJqOj+4c4KrGCfQ3kHM1XXJsCEzhjAkJvPbIVoGZWNktU+5ztvJ3Wu3SOQlELJYkj9mKYpAww5FhoFkdTLCk2hZo1FsUwvZJiaZhwaWDHyAa/aP4K5x4mNi5nUBVhztcskW+SM+en2OAboypiKuVDyaTghGnXD8pyXAlz0ra5gKvS8EK6FFe2yy5ENZWXrh1Rs0GYCVgqDSBYaQu1yH0Z+c2keL4OKM+4rHvinaIgMMawwsYonlXG4plHTLApbISmQAQux8jOnNfJgGXaHwtY9HNRPMOhmo9lHxMLvA99xf0zsJ/W5jusuK3iArapyZRzAQxBboS6qFTdyidERKVrh8JSu72iRWwpeSKw1svKoeXosbK4XR98xcg1zaYQxUtzDFs8MV/cIt5IG/vJknKkkJRbFLotEIMN+1lBLlD7sWKAmP5qqca55vMfJbSBUZT2SaWg82axWNfRv222S+nVdQfpnbQL72qGF+Ga7bxrAy/CdGcihDq+kgzh8M+nwu115VrwF3GRg3dJtr/kky6UQa6XLXWtS2Rrnm8AIfD8yjKzl83eQuVpnnMmaNe35sw6Vr41e//nt+ZTkhwAUeSmx6Xgsn44ANCPYn/y/hX7bYVnNb1aXxZrw5qsawD3TNF73VoJG8AJSriBs3u3Dk8HxHDf15RZveuD0QtgsDMBDPZ2I4B5U2bTyI6eh7einWaIf7XxeDUeKNhKSBddAtvqzHTbM/cW6wIebKXgNtmc5/QNzu34UfmGIuOPvAImkOrPQ06/6JnTMTPL00MULcwzFr+7/J5xKAyqLu8DHqjDd2U7SpcSBaUgxTQMr/1CTeF5tH6HpLEzb3eFbIAltOMCv/SuGzCdCP01Akpn43o27Xvke2P1JB/u8MH4ab+kYVidGgwz+xL/63YnhIc/ERuH+scQAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7931cdb0c35bc750aaf4921ed4013155"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment>Close Incomplete + Work notes</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Facility Ticket Cost Approval">61318db0c35bc750aaf4921ed40131d5</flow>
+        <generation_source/>
+        <order>7</order>
+        <parent_ui_id>f7192ea9-5294-406a-ad52-c7fb8d0d9d60</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-10 15:16:44</sys_created_on>
+        <sys_id>7931cdb0c35bc750aaf4921ed4013158</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-10 15:16:44</sys_updated_on>
+        <ui_id>1b2f9aef-ac25-4240-b47d-6c62c1744bef</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXW/aMBT9K8jPCOUDUMvbBEKa1LUS3XjpusjYN+DNiVPb4WOI/76bxAkRVB2d+oKGlAffr5xzuCd+2hPByYj0gXv+rT9koR+GgecFN31/MQwXfsBDCuCTLklpAlipgSnN8bymMi8C+/23jFMLPPJ7LNcaUns4YJ4Lk0m6m7syjLCVkBzzZPT03CUZ1TjRgiaj/UnqUkiSLkBi6azGdIrR7rLizBXLE8QViTp45zonLtP5PMEMNhVwfK9LYGsh5YBAYioNdElCU2Sp9I6MrM4xoIHyh1TumoqVSG1FNKFbI37jm/teURcDMmNOhOYYOYGqcDyhlj7iZGZz3eilBANTacIhprm043asKnjIrFBp1WLpQtbdSuZJel8pQpoBrf8jNwgCsoJngbyiFT+u1GZWg5yKtJTEUZSKUdmcqLVaLHJbwNkTkFBqnNAsE+kyyrRai7IZoSS9pcRDL5Zqg+80Ypn2KCtw91BV2ptifFKG51SLgsQXHIPNhy4xOzOW1JgjFdQweskLJBUxRyEqVSgliMpNKJqZFpn9hK9agwN+6LqlXwze2jB2e1yo1szj4m+jwAsGYdiPYsqKR0hhd5GGlxyMPXfA1FV0Zk3F+xxxAd7aEV/LPXgdvzPFWeyu3du5rxLOEoMPs8TNNVnC0bh6T/zNCV7w5re2tUnl8puWC4zFb//33PNC3v+xUfpXlCpkX0XGytgOgkbaVHY0/ASGF8W5Nf5tyPvccwHH2j1TAZKbV0jX1oEE0VuIKhFO7OOSnblLNrfKh3nIH3rl74qc9N9cLs9/AIFG5TtTCQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7931cdb0c35bc750aaf4921ed4013158"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Facility Ticket Cost Approval">61318db0c35bc750aaf4921ed40131d5</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>35e1d258-921f-4b28-8d00-788bb5600f14</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-10 15:16:44</sys_created_on>
+        <sys_id>f131cdb0c35bc750aaf4921ed4013157</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-10 15:16:44</sys_updated_on>
+        <ui_id>cf8f9d08-8bee-40eb-8491-30e04300fa07</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+2Yy27bOhCGX8Xg2nEp62LZuyBGDlr0AiRpN3Eg0CQVs6AlVaTSuIbfvSORutROXPscd5GTLhKAc6H+mcwnirldI8HQBI3CeMjH4yGeOxi7GIc+xaHL5+4oGLmEYtRHCVlyiMw5TXMG6wcii9KwXn/OGNGcRc6AFnnOE73ZgJ8JlUmy+mLDwEIXQjLwo8ntXR9lJIcdNc/RZL3lOlSSJHMuIfSq1rStUa+ycs1SWixBVyRq43ubObWe3tspeCCplIP7iD9qnjAOOmIiFe+jJUmgyDRfoYnOCzDknLBPiVw1EQuRaFPnkjwq8QMe7A7LuJhDYdT2oFlGtj/GHE+JJtewM9VF3rQrFZQr0xLGY1JIfdG1mYBPmRZpYlI0mcs6O5XFMvloGoKaDTp/jkKBCJ6VdZbKTVnx9SL9flWLvBRJ1RFbokwpkc2KaJ2LeaFLOWvEJa9avCRZJpL7KMvTB1Elg5Tl4F7CYhDL9Ds8U4n7ZEBoqXsAXSWDS7BPK/MXkouyiA+wDSRv+kit1IUkSrWlQA+jb0WpxBRmS4iqLpgWlHk0F5k+h6c8cKt507fjPqd7Z4u2o2S2a6f9MRrioe+6XhQTWv4IKfQqyvm3giu9O/aXNqJ31UQch8EBUmsMbqzWLekWgmoZVb5fGajSeh+NwyLg7EfAWloGzPA8gUCIXxACtqwXz8Dvxp97gevDr1HsYmfo4JAHYUjHmNAwCHzPbWcIFEANRMKAEwV7tyBcpEr3yDx94D3Hx7uDv+M/buwPkFiP/bnVCIhZjc+Ktygo+KMl91sYXNdGi8DwSASePwac4DVBUIibrS4by06f/wwt5eM+JwJetm/LOQqG82CMQ3bGYjw/80LXPyOU4zMeOD73WUB9x/0DhGFn31ubhU8MaSy47H5X1Y5dtDqe46A6QNUOVJdW1nNyLVLV8qnTpcrfOl1Oh1aI8Uti6zV9Y9G9w8Y7h8zXtMiTPQREC6GqyXiWhE7EcUQcILIm4p1RuQ3Etvh/w4P7l4f/Pw+ev3fUOh/uzVTTNGGiVKw6VJg3M1fnyeqf2/VaaaIFHYypQ5kXU+oyl458TEjsjYcOZx52XCf0Npu7XXz+y1bHcXZA8c1lvpBc/a4ZlrL2C88mdUlrvwut09Lmnep6/8Jgey23G7p31uJxO1usgAYR3b3fr2fIyJ6hyQwlacJnqD9DZVRUDldlhggQ1zgq23pj1kVObLrTWba5jKxUFanogjOYzMr6iyWqULD2U/wr7YCO1PRNC96bmpbsNqm+PtU6TVfEzhl3bQOqnd7ciO5Z55/srPP+wneKy1LUXCfgIIN33wmJvPsJvFd/rl8WAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f131cdb0c35bc750aaf4921ed4013157"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=61318db0c35bc750aaf4921ed40131d5"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=61318db0c35bc750aaf4921ed40131d5^sys_idNOT IN7931cdb0c35bc750aaf4921ed401314b,f531cdb0c35bc750aaf4921ed401314f,f531cdb0c35bc750aaf4921ed4013152,fd31cdb0c35bc750aaf4921ed401314d,fd31cdb0c35bc750aaf4921ed4013150,fd31cdb0c35bc750aaf4921ed4013153"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">de45f0b8c3d7c750aaf4921ed4013120</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Facility Ticket Cost Approval">61318db0c35bc750aaf4921ed40131d5</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-10 15:16:44</sys_created_on>
+        <sys_id>7931cdb0c35bc750aaf4921ed401314b</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-10 17:38:51</sys_updated_on>
+        <ui_id>2138638c-8363-4de9-82d1-bb42daf383cf</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VS27bMBC9isG1IUhWZDTeBU4DFGgboEmzaQNhRFI2UYpU+bGjCj5A79GT9SQZ6mMbjdE2SJfdCObjfN4bzZNbor2rvbO3+sJasVJk8el+SoQKGP5uiYKKkwWhWjHhhFZkSjYgfcDa9mPNwHGWJxH1xnDlIm6dqDqMaut2u88+jlPaPVmSxZjNhK0lNHcvKkLXQjKM7enWYJCl44Ys2l+uBMMe55CVWRJnNJ3N01kcz16dJcU8LZIZS4GfzbGghIJLDF0e6Twh3TV1gKwzQq2G89sh9WYEtWGByiyeEv7guGIcSZQgLZ+SChSq1aYhC2c8AoYDu1ay2UeshXJYjYTYByu+8VApjkNkyVEX5f3t/pgPE+3h8hIcIBVPnTdDKF1rQbntJ8J4CV665THWB1zXncouxUEhx2wtfaXe98Mg+wLjC0TEWyTB66A0cB+ElDdrvf0wsrwSqpvKcCk1Bbk/gcPZFd4FPi3hkldYKK+grnGieW30RnTJyKWKVhIPUSn1FpuGnY2ABuIRDhaiK8QvO/gOjAgq3mEZTMZdsLmlRtSjtq452U2JbexSgrUHjTjc/KsPDHvFg7a8H09I6QpdYOMNH2Tspk/dknfAwTKvx82ehM2eCDv5+f3HSV/8JvJ5y1/GUCbnNDm9/JCeWv5Jv9NPLTDqeY4Pkj/4YED+yghZ9t8HL/ZBoFmAFTTvvvNYLnyK/qER7sPC9033w6bCIrfbgL0Z/13CRYMbJegxtNXmS1B1wHaP34k2uacGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">caec7c78c31bc750aaf4921ed40131bc</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Facility Ticket Cost Approval">61318db0c35bc750aaf4921ed40131d5</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-10 15:16:44</sys_created_on>
+        <sys_id>f531cdb0c35bc750aaf4921ed401314f</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-10 17:38:51</sys_updated_on>
+        <ui_id>35e1d258-921f-4b28-8d00-788bb5600f14</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Vy27aQBT9FWvWBvkBCNhFoEiV0kZqomzayLqeGcOow4wzDwhF/Hvv2OahhKql7bI75tzXOdf3iB3R3tXe2Ud9Y61YKDL98hwToQKGv3dEwYqTKaFaMeGEVkUDxGQN0ofAXHMbKe2iJax5BCqCujYao5HhL55bh7lM2FrC9umKEroUkhne8anB4FTHDZnu3oQEw45VAlU6oSnNs1GeJUk2HqTlKC/TjOXAIceGEkouMXV2EBLdNUj8U4VuWwfcOiPUonvfdV0eDqA2LLBKk5jwV8cV48inAml5TFagGDhttkfEcGD3Sp6ApVAO25GQ/GrFdxyYDYchseIokfI2eHwW3SpbuJqDA6TiqfOmS6VLLSi37XIYr8BLNzvH2oT7OkhtSxyU8lCtpV+pT+1GyLHB4csh4i2S4HVQGqh3OqqHpd58PrC8FarZSheUmoI8vsDh7krvAp8d4ZKvsFGxwhvAjRbhEERTjFxW/YXER7+SeoNDw332gQbifVws9G8RnzfwExgRVHzENljc0izBClo0t4ztcE2c7GNit3YmwdqTSNxu8eIDxVZyJ65o9xNKqBG1u8HJa97p2MfvrXHmit0uyQeUjfi4l5bZuDeYlGWvnEDaK4esSvMsh1E16s+0V26//+qTJGfJe6f8aZvr3DOBYTVMk+Fl9wxGl9xzwTdXWib7hWXC9/pNxyRJ8t8yf20ZYYv20DttzfB/6JjnYI925nHXVFik9hiwD4f/nBDY4nEJeg5ttPkWRJ2w/Q+p+kIdvQYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">82ec7c78c31bc750aaf4921ed40131da</block>
+        <comment/>
+        <connected_to>35e1d258-921f-4b28-8d00-788bb5600f14</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Facility Ticket Cost Approval">61318db0c35bc750aaf4921ed40131d5</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-10 15:16:44</sys_created_on>
+        <sys_id>f531cdb0c35bc750aaf4921ed4013152</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-10 17:38:51</sys_updated_on>
+        <ui_id>e778c233-3778-40e6-8be6-9be5a8e3cf59</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">bc6574b8c3d7c750aaf4921ed40131dd</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Facility Ticket Cost Approval">61318db0c35bc750aaf4921ed40131d5</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id>2138638c-8363-4de9-82d1-bb42daf383cf</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-10 15:16:44</sys_created_on>
+        <sys_id>fd31cdb0c35bc750aaf4921ed401314d</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-10 17:38:51</sys_updated_on>
+        <ui_id>51d0e3f5-372a-4600-9e65-659e1e177b5c</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">11318db0c35bc750aaf4921ed4013178</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Facility Ticket Cost Approval">61318db0c35bc750aaf4921ed40131d5</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id>35e1d258-921f-4b28-8d00-788bb5600f14</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-10 15:16:44</sys_created_on>
+        <sys_id>fd31cdb0c35bc750aaf4921ed4013150</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-10 17:38:51</sys_updated_on>
+        <ui_id>f7192ea9-5294-406a-ad52-c7fb8d0d9d60</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXW/aMBT9K8jPATkEKPBWUVWq1K3SWvVlq6Ib+wa8mTizHShD/PddJ+FDHVVXrY97w+de33vOiY/YMlP5svLuwVw6p+YFm359ipgqAka/t6yAJbIpE6aQyitTpDUQsRXoKhRufGeO/lvFef/CdSx+R+FRUoNUrtSweXyrTyyUlhbbzSVYmu/Rsun2RUlJGpNzyOOJiEXSHyV9GjYexNkoyeK+TAAhoYEaMtTUOttT7tzWSPSqFr8pA+68VcW8Pd+2U+73oLEysIp5xPDZYyGJ/TQH7TBiSygkeGM3B8QiyLtCH4GFKjyNY6H52alftLA/HIbGHEmiwKZ4OKatfw2cX4EHolIJX9m2VSyMEugacyTmUGk/O8WahrsySG2ueMj0/rbR1bL43DjCDgP2n4uQyhEJLIPSQL3Vkd8vzPrLnuW1KmpX2qI2AvThBJ68yyof+GwZalzSoHQJZUmOpqU1K1VfJi7L3lzToZdrs6al4SX2QATiPTIWeteEX9XwI1gVVHyiMXS5oZmBUyKtXy2NI5uQ7SLmNm6mwbmjSHI3/VkFio3kVlza+BOuCKtKf0mbV9jq2EV/huDk/W+3Ih/nE8nH3XGG2B1wzLrjwSTuJhz5IOE8B37RI7akF3TqPHjc7UIQEvl6XD5q7PvSNYFhPoz58Hy6BqNz6TqTq3dGqv9GpML3/MtEcc7/R+qfI6Vc2gSh1VYv/8BEPYX4NDsPXgvliNpDwG72/z6hsKHHpcQptDb2RxB1xHa/Af7T1I3HBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">c6ec7c78c31bc750aaf4921ed40131db</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Facility Ticket Cost Approval">61318db0c35bc750aaf4921ed40131d5</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <parent_ui_id>e778c233-3778-40e6-8be6-9be5a8e3cf59</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-10 15:16:44</sys_created_on>
+        <sys_id>fd31cdb0c35bc750aaf4921ed4013153</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-10 17:38:51</sys_updated_on>
+        <ui_id>9fcf9a8d-ee95-40c0-959f-2f3b7c4a095e</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=61318db0c35bc750aaf4921ed40131d5"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=61318db0c35bc750aaf4921ed40131d5"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_61318db0c35bc750aaf4921ed40131d5</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-10 15:16:43</sys_created_on>
+        <sys_id>3d31cdb0c35bc750aaf4921ed4013132</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Facilities Maintenance" source="x_2025334_fac">009dc1c8c39b4350aaf4921ed4013110</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-10 15:16:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_61318db0c35bc750aaf4921ed40131d5</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-10 15:16:43</sys_created_on>
+        <sys_id>a1318db0c35bc750aaf4921ed40131f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Facilities Maintenance" source="x_2025334_fac">009dc1c8c39b4350aaf4921ed4013110</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-10 15:16:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_61318db0c35bc750aaf4921ed40131d5</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-10 15:16:43</sys_created_on>
+        <sys_id>a531cdb0c35bc750aaf4921ed401311a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Facilities Maintenance" source="x_2025334_fac">009dc1c8c39b4350aaf4921ed4013110</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-10 15:16:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_61318db0c35bc750aaf4921ed40131d5"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_61318db0c35bc750aaf4921ed40131d5"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>c62fd8b8c317c750aaf4921ed40131ed</sys_id>
+        <latest_snapshot>61318db0c35bc750aaf4921ed40131d5</latest_snapshot>
+        <compiler_build>glide-australia-02-11-2026__patch3-05-25-2026_06-12-2026_1106.zip</compiler_build>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=c62fd8b8c317c750aaf4921ed40131ed^sys_idNOT IN7531cdb0c35bc750aaf4921ed40131a5"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.Every</binding_strategy>
+        <plan>{"@class":"com.snc.process_flow.engine.serialization.plan_data.ChunkingPlanData","chunk_data":{"table":"sys_flow_trigger_plan","id":"7531cdb0c35bc750aaf4921ed40131a5","name":"plan","plan_signature":null},"plan_data":"CHUNKING_PLAN"}</plan>
+        <plan_id>c62fd8b8c317c750aaf4921ed40131ed</plan_id>
+        <snapshot>61318db0c35bc750aaf4921ed40131d5</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-10 15:16:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7531cdb0c35bc750aaf4921ed40131a5</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-10 17:38:52</sys_updated_on>
+        <trigger display_value="">77b1edb8c35fc750aaf4921ed40131fe</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=c62fd8b8c317c750aaf4921ed40131ed"/>
+</record_update>
