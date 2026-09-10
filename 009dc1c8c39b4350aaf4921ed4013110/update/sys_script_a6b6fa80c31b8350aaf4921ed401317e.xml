@@ -12,7 +12,7 @@
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
         <collection>x_2025334_fac_facility_request</collection>
-        <condition>gs.hasRole('x_2025334_fac.user') &amp;&amp; !gs.hasRole('x_2025334_fac.admin')</condition>
+        <condition>gs.hasRole('x_2025334_fac.user') &amp;&amp; !gs.hasRole('x_2025334_fac.agent')</condition>
         <description/>
         <execute_function>false</execute_function>
         <filter_condition/>
@@ -38,7 +38,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a6b6fa80c31b8350aaf4921ed401317e</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>Filter requests to own records</sys_name>
         <sys_overrides/>
         <sys_package display_value="Facilities Maintenance" source="x_2025334_fac">009dc1c8c39b4350aaf4921ed4013110</sys_package>
@@ -46,7 +46,7 @@
         <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
         <sys_update_name>sys_script_a6b6fa80c31b8350aaf4921ed401317e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-09 07:27:24</sys_updated_on>
+        <sys_updated_on>2026-09-10 12:30:39</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

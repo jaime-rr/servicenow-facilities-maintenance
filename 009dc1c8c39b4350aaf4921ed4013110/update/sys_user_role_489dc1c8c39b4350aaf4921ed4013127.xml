@@ -2,25 +2,25 @@
     <sys_user_role action="INSERT_OR_UPDATE">
         <assignable_by/>
         <can_delegate>true</can_delegate>
-        <description>Default admin role</description>
+        <description>Default agent role</description>
         <elevated_privilege>false</elevated_privilege>
-        <federated_id>YZ1n6pHjqBkRqvtnlcqc+GyvKbhPNDOHBSuhlVHkOP8=</federated_id>
+        <federated_id>ipLBPxz9yy7Xz7/yPZmjTVvLjYomwuK4eKd7Yh0jTzA=</federated_id>
         <grantable>true</grantable>
         <includes_roles/>
-        <name>x_2025334_fac.admin</name>
+        <name>x_2025334_fac.agent</name>
         <scoped_admin>false</scoped_admin>
-        <suffix>admin</suffix>
+        <suffix>agent</suffix>
         <sys_class_name>sys_user_role</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-09-08 08:15:15</sys_created_on>
         <sys_id>489dc1c8c39b4350aaf4921ed4013127</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>x_2025334_fac.admin</sys_name>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_2025334_fac.agent</sys_name>
         <sys_package display_value="Facilities Maintenance" source="x_2025334_fac">009dc1c8c39b4350aaf4921ed4013110</sys_package>
         <sys_policy/>
         <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
         <sys_update_name>sys_user_role_489dc1c8c39b4350aaf4921ed4013127</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-08 08:15:15</sys_updated_on>
+        <sys_updated_on>2026-09-10 12:28:40</sys_updated_on>
     </sys_user_role>
 </record_update>
