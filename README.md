@@ -18,7 +18,7 @@
 |---|---|
 | **Employee** | Reports repairs from the portal — sees only their own requests |
 | **Agent** | Manages all requests — assigns, updates, closes |
-| **Manager** | Reads everything — no changes |
+| **Manager** | Approves costs above the threshold; otherwise reads everything |
 
 ---
 
@@ -26,12 +26,15 @@
 
 - **Facility Request table** — extends Task, reusing the platform's built-in request features: assignment, work notes, activity, priority, state
 - **Portal intake** — employees report repairs from Service Portal and Employee Center (`Report a repair`), describing the problem and choosing the building
-- **Security** — employees see only their own requests, agents manage all, managers read-only
-- **Urgency rule** — the issue category decides priority: water leaks, power outages, safety hazards and HVAC failures land at Critical; cosmetic issues at Low; everything else Moderate. Agents can override
+- **Security** — employees see only their own requests, agents manage all, managers read-only apart from cost approvals
+- **Urgency rule** — the issue category decides priority: water leaks, power outages, safety hazards and HVAC failures land at Critical; cosmetic issues at Low; everything else Moderate. Agents can override. A Critical priority also flags the request as emergency-approved for later spend review
+- **Cost approval rule** — the agent sets the cost during triage: up to €150 proceeds, above it waits for the manager's approval; Critical requests skip approval
+- **ATF tests** — the core behaviours are covered by automated tests: default state, priority assignment, emergency flagging and cost approvals
 
 ## Design decisions
 
 - **Extends Task** — we reuse Task's built-in features instead of building our own from scratch. Incident was rejected: it's designed for IT incidents, not facilities requests
+- **Cost estimated by the agent during triage, not by the employee** — pricing a repair is expert input; an untrusted number driving money decisions is worse than a short triage step
 - **Urgency on Task's priority field, via decision table** — we reuse the OOB priority (Critical…Planning) instead of a custom urgency field. A decision table maps category → priority, called from a Flow Designer flow on insert/category change — policy stays grid-editable, no code.
 
 ## Setup & demo
