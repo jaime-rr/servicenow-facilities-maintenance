@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="0e90d140c3db4350aaf4921ed40131b2" extends="task" label="Facility Request" max_length="40" name="x_2025334_fac_facility_request" type="collection">
+        <element attributes="ref_qual_elements=issue_category" label="Vendor" max_length="32" name="vendor" reference="x_2025334_fac_vendor_coverage" reference_qual="javascript:'category=' + current.issue_category" type="reference" use_reference_qualifier="advanced"/>
         <element label="Emergency approved" max_length="40" name="emergency_approved" type="boolean"/>
         <element label="Estimated cost" max_length="20" name="estimated_cost" type="currency"/>
         <element choice="1" label="Building" mandatory="true" max_length="255" name="building" type="choice">

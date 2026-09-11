@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="d2601545c3db4b50aaf4921ed4013124" label="Vendor Coverage" max_length="40" name="x_2025334_fac_vendor_coverage" type="collection">
+        <element choice="1" label="Category" max_length="40" name="category" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Power outage" sequence="1" value="power_outage"/>
+                <element inactive_on_update="false" label="General" sequence="5" value="general"/>
+                <element inactive_on_update="false" label="HVAC failure" sequence="3" value="hvac_failure"/>
+                <element inactive_on_update="false" label="Water leak" sequence="0" value="water_leak"/>
+                <element inactive_on_update="false" label="Cosmetic" sequence="4" value="cosmetic"/>
+                <element inactive_on_update="false" label="Safety hazard" sequence="2" value="safety_hazard"/>
+            </choice>
+        </element>
+        <element display="true" label="Company" max_length="32" name="company" reference="core_company" type="reference"/>
+        <index name="index">
+            <element name="company"/>
+        </index>
+    </element>
+</database>
