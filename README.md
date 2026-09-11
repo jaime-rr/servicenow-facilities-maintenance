@@ -17,7 +17,7 @@
 | Persona | Access |
 |---|---|
 | **Employee** | Reports repairs from the portal — sees only their own requests |
-| **Agent** | Manages all requests — assigns, updates, closes |
+| **Agent** | Manages all requests — triages, picks the vendor, updates, closes |
 | **Manager** | Approves costs above the threshold; otherwise reads everything |
 
 ---
@@ -29,6 +29,7 @@
 - **Security** — employees see only their own requests, agents manage all, managers read-only apart from cost approvals
 - **Urgency rule** — the issue category decides priority: water leaks, power outages, safety hazards and HVAC failures land at Critical; cosmetic issues at Low; everything else Moderate. Agents can override. A Critical priority also flags the request as emergency-approved for later spend review
 - **Cost approval rule** — the agent sets the cost during triage: up to €150 proceeds, above it waits for the manager's approval; Critical requests skip approval
+- **Vendor routing** — every request belongs to the facilities team from the moment it's created, so nothing sits unassigned; the agent picks the vendor during triage from those covering that kind of issue, and a coverage mapping lets one contractor handle several trades
 - **ATF tests** — the core behaviours are covered by automated tests: default state, priority assignment, emergency flagging and cost approvals
 
 ## Design decisions
