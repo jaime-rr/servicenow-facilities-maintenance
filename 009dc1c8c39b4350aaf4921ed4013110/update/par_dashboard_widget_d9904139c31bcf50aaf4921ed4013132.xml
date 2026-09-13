@@ -2,8 +2,8 @@
     <par_dashboard_widget action="INSERT_OR_UPDATE">
         <canvas display_value="">598a44f9c353cf50aaf4921ed40131ca</canvas>
         <component display_value="List">7ff373544303121093711347efb8f23c</component>
-        <component_props>{"metrics":[{"aggregateFunction":"COUNT","axisId":"primary","dataSource":"dGFibGVpbmNpZGVudDE3MzYzNjA0MzU5NjM=","id":"ZEdGaWJHVnBibU5wWkdWdWRERTNNell6TmpBME16VTVOak09MTczNjM2MDQzNjgwMQ==","numberFormat":{"customFormat":false}}],"showHeader":true,"wrapTitle":false,"showLoadingIndicator":false,"showHeaderSeparator":false,"contextMenuActions":[],"headingLevel":2,"limit":10,"columnLimit":0,"maxCharLimit":40,"columnPreferenceKey":"","showPersonalization":false,"hideDotwalk":false,"showColumnReorder":true,"showColumnGrouping":true,"showColumnResizing":true,"showColumnFiltering":false,"showColumnSorting":true,"parFilter":"","allowAdditionalGroupByPerMetric":false,"groupBy":[],"sortBy":null,"sortByOrder":"ORDERBY","followFilters":true,"showFilterIcon":true,"enableRealTimeUpdate":false,"enableDrilldown":true,"enableCustomEmptyState":true,"componentId":"717hhgv2","emptyStateIllustration":"completed-tasks","emptyStateHeading":"Nothing is slipping","emptyStateHeadingLevel":3,"emptyStateContent":"There are no repair requests over 7 days created.","emptyStateAlignment":"horizontal","filterConfigurations":[],"columns":"state,short_description,estimated_cost,issue_category,sys_created_by,sys_created_on","table":"x_2025334_fac_facility_request","groupByField":"","showLinks":true,"wrapCellContent":"useLineBreaksUserPref","showViewAll":false,"showInlineEditing":true,"allowListPagination":true,"lineClamp":1,"headerTitleAlignment":"start","headerTitle":"Open over 7 days","showBorder":true,"showExportOption":true,"dataSources":[{"isDatabaseView":false,"allowRealTime":true,"label":"Facility Request","sourceType":"table","tableOrViewName":"x_2025334_fac_facility_request","filterQuery":"stateNOT IN4,3,7^sys_created_on&lt;javascript:gs.beginningOfLast7Days()","preferredVisualizations":["d24d53f60350de7a652caf3188a46ed2"],"id":"dGFibGV4XzIwMjUzMzRfZmFjX2ZhY2lsaXR5X3JlcXVlc3QxNzg5MzIxNDI1MDM1","dataCategories":["trend","group","simple"]}],"bareBorder":false,"additionalGroupByConfig":[],"showAdditionalGroupBySelector":false}</component_props>
-        <h>11</h>
+        <component_props>{"metrics":[{"aggregateFunction":"COUNT","axisId":"primary","dataSource":"dGFibGVpbmNpZGVudDE3MzYzNjA0MzU5NjM=","id":"ZEdGaWJHVnBibU5wWkdWdWRERTNNell6TmpBME16VTVOak09MTczNjM2MDQzNjgwMQ==","numberFormat":{"customFormat":false}}],"showHeader":true,"wrapTitle":false,"showLoadingIndicator":false,"showHeaderSeparator":false,"headingLevel":2,"limit":10,"columnLimit":0,"maxCharLimit":40,"showPersonalization":false,"hideDotwalk":false,"showColumnReorder":true,"showColumnGrouping":true,"showColumnResizing":true,"showColumnFiltering":false,"showColumnSorting":true,"allowAdditionalGroupByPerMetric":false,"sortByOrder":"ORDERBY","followFilters":true,"showFilterIcon":true,"enableRealTimeUpdate":false,"enableDrilldown":true,"enableCustomEmptyState":true,"componentId":"717hhgv2","emptyStateIllustration":"completed-tasks","emptyStateHeading":"Nothing is slipping","emptyStateHeadingLevel":3,"emptyStateContent":"There are no repair requests over 7 days created.","emptyStateAlignment":"horizontal","columns":"state,short_description,estimated_cost,issue_category,sys_created_by,sys_created_on","table":"x_2025334_fac_facility_request","showLinks":true,"wrapCellContent":"useLineBreaksUserPref","showViewAll":false,"showInlineEditing":true,"allowListPagination":true,"lineClamp":1,"headerTitleAlignment":"start","headerTitle":"Open over 7 days","showBorder":true,"showExportOption":true,"dataSources":[{"isDatabaseView":false,"allowRealTime":true,"label":"Facility Request","sourceType":"table","tableOrViewName":"x_2025334_fac_facility_request","filterQuery":"stateNOT IN4,3,7^sys_created_on&lt;javascript:gs.beginningOfLast7Days()","preferredVisualizations":["d24d53f60350de7a652caf3188a46ed2"],"id":"dGFibGV4XzIwMjUzMzRfZmFjX2ZhY2lsaXR5X3JlcXVlc3QxNzg5MzIxNDI1MDM1","dataCategories":["trend","group","simple"]}],"bareBorder":false,"showAdditionalGroupBySelector":false}</component_props>
+        <h>9</h>
         <name/>
         <required_translations>[{"comment":"","message":"Nothing is slipping","code":"PAR_DASHBOARD.598a44f9c353cf50aaf4921ed40131ca.d9904139c31bcf50aaf4921ed4013132"},{"comment":"","message":"There are no repair requests over 7 days created.","code":"PAR_DASHBOARD.598a44f9c353cf50aaf4921ed40131ca.d9904139c31bcf50aaf4921ed4013132"},{"comment":"","message":"Open over 7 days","code":"PAR_DASHBOARD.598a44f9c353cf50aaf4921ed40131ca.d9904139c31bcf50aaf4921ed4013132"},{"comment":"","message":"Facility Request","code":"PAR_DASHBOARD.598a44f9c353cf50aaf4921ed40131ca.d9904139c31bcf50aaf4921ed4013132"}]</required_translations>
         <stored_component/>
@@ -13,7 +13,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d9904139c31bcf50aaf4921ed4013132</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package display_value="Facilities Maintenance" source="x_2025334_fac">009dc1c8c39b4350aaf4921ed4013110</sys_package>
@@ -21,11 +21,11 @@
         <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
         <sys_update_name>par_dashboard_widget_d9904139c31bcf50aaf4921ed4013132</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-13 17:53:17</sys_updated_on>
+        <sys_updated_on>2026-09-13 18:05:56</sys_updated_on>
         <visualization/>
-        <w>36</w>
+        <w>37</w>
         <widget_props/>
-        <x>12</x>
-        <y>13</y>
+        <x>11</x>
+        <y>10</y>
     </par_dashboard_widget>
 </record_update>

@@ -2,8 +2,8 @@
     <par_dashboard_widget action="INSERT_OR_UPDATE">
         <canvas display_value="">598a44f9c353cf50aaf4921ed40131ca</canvas>
         <component display_value="List">7ff373544303121093711347efb8f23c</component>
-        <component_props>{"metrics":[{"aggregateFunction":"COUNT","axisId":"primary","dataSource":"dGFibGVpbmNpZGVudDE3MzYzNjA0MzU5NjM=","id":"ZEdGaWJHVnBibU5wWkdWdWRERTNNell6TmpBME16VTVOak09MTczNjM2MDQzNjgwMQ==","numberFormat":{"customFormat":false}}],"showHeader":true,"wrapTitle":false,"showLoadingIndicator":false,"showHeaderSeparator":false,"headingLevel":2,"limit":10,"columnLimit":0,"maxCharLimit":40,"showPersonalization":false,"hideDotwalk":false,"showColumnReorder":true,"showColumnGrouping":true,"showColumnResizing":true,"showColumnFiltering":false,"showColumnSorting":true,"allowAdditionalGroupByPerMetric":false,"sortByOrder":"ORDERBY","followFilters":true,"showFilterIcon":true,"enableRealTimeUpdate":false,"enableDrilldown":true,"enableCustomEmptyState":false,"componentId":"aeg344v","emptyStateIllustration":"no-data","emptyStateHeading":"No data available.","emptyStateHeadingLevel":3,"emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateAlignment":"vertical-centered","columns":"sysapproval,state,sysapproval.short_description,sysapproval.ref_x_2025334_fac_facility_request.estimated_cost,sysapproval.ref_x_2025334_fac_facility_request.issue_category","table":"sysapproval_approver","showLinks":true,"wrapCellContent":"useLineBreaksUserPref","showViewAll":true,"showInlineEditing":true,"allowListPagination":true,"lineClamp":1,"headerTitleAlignment":"start","showBorder":true,"showExportOption":true,"dataSources":[{"isDatabaseView":false,"allowRealTime":true,"label":"Approval","sourceType":"table","tableOrViewName":"sysapproval_approver","filterQuery":"source_table=x_2025334_fac_facility_request^state=requested","preferredVisualizations":["d24d53f60350de7a652caf3188a46ed2"],"id":"dGFibGVzeXNhcHByb3ZhbF9hcHByb3ZlcjE3ODkzMTg3MjMxMzA=","dataCategories":["trend","group","simple"]}],"bareBorder":false,"showAdditionalGroupBySelector":false,"groupByField":"","headerTitle":"Waiting on me"}</component_props>
-        <h>13</h>
+        <component_props>{"metrics":[{"aggregateFunction":"COUNT","axisId":"primary","dataSource":"dGFibGVpbmNpZGVudDE3MzYzNjA0MzU5NjM=","id":"ZEdGaWJHVnBibU5wWkdWdWRERTNNell6TmpBME16VTVOak09MTczNjM2MDQzNjgwMQ==","numberFormat":{"customFormat":false}}],"showHeader":true,"wrapTitle":false,"showLoadingIndicator":false,"showHeaderSeparator":false,"headingLevel":2,"limit":10,"columnLimit":0,"maxCharLimit":40,"showPersonalization":false,"hideDotwalk":false,"showColumnReorder":true,"showColumnGrouping":true,"showColumnResizing":true,"showColumnFiltering":false,"showColumnSorting":true,"allowAdditionalGroupByPerMetric":false,"sortByOrder":"ORDERBY","followFilters":true,"showFilterIcon":true,"enableRealTimeUpdate":false,"enableDrilldown":true,"enableCustomEmptyState":false,"componentId":"aeg344v","emptyStateIllustration":"no-data","emptyStateHeading":"No data available.","emptyStateHeadingLevel":3,"emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateAlignment":"vertical-centered","columns":"sysapproval,state,sysapproval.short_description,sysapproval.ref_x_2025334_fac_facility_request.estimated_cost,sysapproval.ref_x_2025334_fac_facility_request.issue_category","table":"sysapproval_approver","showLinks":true,"wrapCellContent":"useLineBreaksUserPref","showViewAll":true,"showInlineEditing":true,"allowListPagination":true,"lineClamp":1,"headerTitleAlignment":"start","showBorder":true,"showExportOption":true,"dataSources":[{"isDatabaseView":false,"allowRealTime":true,"label":"Approval","sourceType":"table","tableOrViewName":"sysapproval_approver","filterQuery":"source_table=x_2025334_fac_facility_request^state=requested","preferredVisualizations":["d24d53f60350de7a652caf3188a46ed2"],"id":"dGFibGVzeXNhcHByb3ZhbF9hcHByb3ZlcjE3ODkzMTg3MjMxMzA=","dataCategories":["trend","group","simple"]}],"bareBorder":false,"showAdditionalGroupBySelector":false,"headerTitle":"Waiting on me"}</component_props>
+        <h>10</h>
         <name/>
         <required_translations>[{"comment":"","message":"No data available.","code":"PAR_DASHBOARD.598a44f9c353cf50aaf4921ed40131ca.b3f5f471c3d7cf50aaf4921ed4013165"},{"comment":"","message":"There are no scores available for the selected criteria. Contact your admin for more info.","code":"PAR_DASHBOARD.598a44f9c353cf50aaf4921ed40131ca.b3f5f471c3d7cf50aaf4921ed4013165"},{"comment":"","message":"Waiting on me","code":"PAR_DASHBOARD.598a44f9c353cf50aaf4921ed40131ca.b3f5f471c3d7cf50aaf4921ed4013165"},{"comment":"","message":"Approval","code":"PAR_DASHBOARD.598a44f9c353cf50aaf4921ed40131ca.b3f5f471c3d7cf50aaf4921ed4013165"}]</required_translations>
         <stored_component/>
@@ -13,7 +13,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b3f5f471c3d7cf50aaf4921ed4013165</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package display_value="Facilities Maintenance" source="x_2025334_fac">009dc1c8c39b4350aaf4921ed4013110</sys_package>
@@ -21,11 +21,11 @@
         <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
         <sys_update_name>par_dashboard_widget_b3f5f471c3d7cf50aaf4921ed4013165</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-13 17:41:59</sys_updated_on>
+        <sys_updated_on>2026-09-13 18:05:56</sys_updated_on>
         <visualization/>
-        <w>36</w>
+        <w>37</w>
         <widget_props/>
-        <x>12</x>
+        <x>11</x>
         <y>0</y>
     </par_dashboard_widget>
 </record_update>

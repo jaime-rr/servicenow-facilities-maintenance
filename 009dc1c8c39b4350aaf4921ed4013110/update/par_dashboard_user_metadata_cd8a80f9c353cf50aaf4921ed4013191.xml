@@ -6,7 +6,7 @@
         <created_by_user display_value="Jaime Rodriguez">6816f79cc0a8016401c5a33be04be441</created_by_user>
         <created_on>2026-09-13 13:51:41</created_on>
         <dashboard display_value="Facilities Maintenance Dashboard">4d8a80f9c353cf50aaf4921ed401318a</dashboard>
-        <edit_locked/>
+        <edit_locked>{"sysId":"6816f79cc0a8016401c5a33be04be441","name":"Jaime Rodriguez","avatar":"a5d3c898c3222010ae17dd981840dd8b.iix?t=small","lockedOn":"1789322774990"}</edit_locked>
         <enable_data_cache>false</enable_data_cache>
         <include_custom_insights>true</include_custom_insights>
         <include_insight_sentiment>false</include_insight_sentiment>
@@ -21,10 +21,10 @@
         <include_trends>true</include_trends>
         <include_widget_notification>true</include_widget_notification>
         <last_deactivated_on/>
-        <last_updated_on>2026-09-13 17:53:44</last_updated_on>
+        <last_updated_on>2026-09-13 18:06:21</last_updated_on>
         <po_project_id_list>[]</po_project_id_list>
         <refresh_information>false</refresh_information>
-        <refresh_interval>-1</refresh_interval>
+        <refresh_interval/>
         <requested_by_user/>
         <schedule_repetition>false</schedule_repetition>
         <show_ai_insights_panel>false</show_ai_insights_panel>
@@ -36,7 +36,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>cd8a80f9c353cf50aaf4921ed4013191</sys_id>
-        <sys_mod_count>32</sys_mod_count>
+        <sys_mod_count>48</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package display_value="Facilities Maintenance" source="x_2025334_fac">009dc1c8c39b4350aaf4921ed4013110</sys_package>
@@ -44,7 +44,7 @@
         <sys_scope display_value="Facilities Maintenance">009dc1c8c39b4350aaf4921ed4013110</sys_scope>
         <sys_update_name>par_dashboard_user_metadata_cd8a80f9c353cf50aaf4921ed4013191</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-13 17:53:47</sys_updated_on>
+        <sys_updated_on>2026-09-13 18:06:21</sys_updated_on>
         <updated_by_user display_value="Jaime Rodriguez">6816f79cc0a8016401c5a33be04be441</updated_by_user>
         <use_custom_tab_colors>false</use_custom_tab_colors>
         <widgets_margin>$now-global-space--sm</widgets_margin>
