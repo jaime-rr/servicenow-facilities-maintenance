@@ -116,7 +116,7 @@ Three roles, and each one is deliberately narrow.
 
 | Persona | Can | Cannot |
 |---|---|---|
-| **Employee** — the requester | Report a repair from the portal; follow their own request as it moves received → in progress → done | See anyone else's request, mark their own request urgent, or approve anything |
+| **Employee** — the requester | Report a repair from the portal; follow their own request as it moves received → in progress → done | See anyone else's request, mark their own request urgent, enter a cost estimate, or approve anything |
 | **Facilities agent** — the operator | See every incoming request in one queue; triage it; record the cost estimate; select the vendor; update and close | Approve spend above the threshold |
 | **Manager** — who pays for it | Approve costs above €150; see open work, spend, and anything slipping | Edit request records |
 
@@ -130,14 +130,15 @@ Three roles, and each one is deliberately narrow.
   hazards, and total HVAC failures are flagged Critical automatically; cosmetic issues are Low;
   everything else sits in between. An agent can override the priority; the requester cannot raise
   their own.
-- **Spend is controlled at €150.** The agent records the cost estimate during triage. Up to €150 the
-  repair proceeds; above it, work waits for the manager's approval. Critical requests skip approval
-  and are flagged for later review.
+- **Spend is controlled at €150.** The agent records the cost estimate during triage — the field is
+  not editable for the requester. Up to €150 the repair proceeds; above it, work waits for the
+  manager's approval. Critical requests skip approval and are flagged for later review.
 - **Nothing can sit unassigned.** The facilities team owns every request from the moment it is
   created, so there is no state in which a request is invisible.
 - **The right vendor is one click away.** A coverage mapping links each vendor to the trades they
   handle, and the vendor list is filtered to the request's issue category — so a multi-trade
-  contractor is one record, not three, and the wrong pick is not on the list.
+  contractor is one record, not three, and the wrong pick is not on the list. Change the category
+  and the form re-evaluates the selection rather than leaving the wrong trade in place.
 - **The requester can see what is happening.** Status moves from received to in progress to done in
   the portal, with the requester's view limited to their own records.
 - **The manager sees the whole picture.** Open requests, spend, and anything slipping.
@@ -161,7 +162,9 @@ These are the choices that shaped the app. Every one of them was a fork in the r
   manager has to approve.
 - **Why** — pricing a repair is expert input, and an untrusted number driving a money decision is
   worse than a short triage step. Approving every request would stall a €20 chair for days, and
-  approving none would leave spend uncontrolled, so the €150 threshold splits the difference.
+  approving none would leave spend uncontrolled, so the €150 threshold splits the difference. The
+  UI Policy enforces the rule at the form level so the field is out of reach rather than merely
+  discouraged.
 
 ### Priority is derived from the issue category, and the requester cannot set it
 
@@ -181,7 +184,8 @@ These are the choices that shaped the app. Every one of them was a fork in the r
   for a multi-trade contractor, which means the vendor master lies. This is the app's only custom
   table, because no baseline table maps vendors to trades and no field can hold "many". The cost is
   that per-vendor reporting walks through the coverage row — cheaper than a vendor master that
-  cannot be trusted.
+  cannot be trusted. A client script keeps the selected vendor consistent with the category when the
+  category changes on the form.
 
 ### Ownership is a field default, not a routing rule
 
@@ -224,10 +228,12 @@ flowchart LR
 | Flow Designer | The urgency rule on create and on category change, and the spend approval |
 | Decision table | The category-to-priority policy, editable as a grid with no code change |
 | Reference qualifier | Filters the vendor field to the vendors covering the request's issue category |
+| UI Policy | Hides the cost estimate from the employee, so the field is editable only during agent triage |
+| Client Script | Re-evaluates the vendor selection when the issue category changes, so the wrong trade cannot stay selected |
 | Table ACLs | An employee reads only their own requests; an agent manages all; a manager reads and approves |
 | Baseline approval engine | The manager approval created when an estimate crosses €150 |
 | Table inheritance | The request extends Task, inheriting assignment, work notes, activity, priority, and state |
-| Automated Test Framework | Ten tests covering the rules above |
+| Automated Test Framework | Eleven tests covering the rules above |
 
 ### Data model
 
@@ -242,16 +248,17 @@ flowchart LR
 ### Security
 
 Three roles map to the three personas. An employee reads only their own requests through an ACL on
-the request table; an agent has full access; a manager reads and approves but does not edit records.
-The employee role is granted through a `Facilities Employees` group rather than assigned user by
-user, so onboarding stays a group operation and no ACL is written per person.
+the request table and cannot enter a cost estimate; an agent has full access; a manager reads and
+approves but does not edit records. The employee role is granted through a `Facilities Employees`
+group rather than assigned user by user, so onboarding stays a group operation and no ACL is written
+per person.
 
 ---
 
 ## Tested with the Automated Test Framework
 
 The core behaviours are covered by automated tests rather than by clicking through the app after
-each change. Ten tests stand behind the rules above.
+each change. Eleven tests stand behind the rules above.
 
 | Test | What it proves |
 |---|---|
@@ -264,6 +271,7 @@ each change. Ten tests stand behind the rules above.
 | Every request is owned by the facilities team | Nothing is created unassigned |
 | A selected vendor survives unrelated updates | Triage data is not clobbered by later edits |
 | An employee cannot read another employee's request | The ACLs hold under impersonation |
+| An employee cannot enter a cost estimate | The UI Policy holds the triage field out of the requester's reach |
 | A rejected request closes incomplete | Rejection ends the loop instead of leaving it open |
 
 ---
